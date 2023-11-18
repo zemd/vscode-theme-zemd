@@ -2,7 +2,7 @@
   "name": "zemd-theme-dark",
   "displayName": "Zemd Theme Dark",
   "description": "A Visual Studio Code theme for effective work",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.84.0"
   },
