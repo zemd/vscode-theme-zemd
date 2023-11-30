@@ -39,4 +39,5 @@ export default [
   ),
   scope(["constant.numeric.float.yaml", "constant.numeric.integer.yaml"], tokens.syntax.number.fg, "underline"),
   scope("support.function.github-actions-expression", tokens.syntax.function.fg),
+  scope("constant.other.timestamp.yaml", tokens.syntax.enum.fg),
 ];
