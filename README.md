@@ -1,6 +1,6 @@
 # zemd's VS Code dark theme
 
-![zemd VS Code dark theme](https://codeandgin.co/vscode/screenshot.png)
+![zemd VS Code dark theme](https://codeandgin.co/vscode/screenshot.v0.1.png)
 
 ## Install
 
