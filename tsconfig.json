@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Typescript configuration",
+  "extends": "@zemd/tsconfig/tsconfig-node.json",
+  "compilerOptions": {
+    "outDir": "build",
+    "rootDir": ".",
+    "baseUrl": "/"
+  },
+  "include": ["src/**.ts"]
+}

@@ -1,0 +1,22 @@
+{
+  "root": {
+    "fg": { "value": "{palette.gray.2300}" },
+    "bg": { "value": "{palette.gray.500}" },
+    "error": {
+      "fg": { "value": "{palette.red.1700}" },
+      "bg": { "value": "{palette.error.200}" }
+    },
+    "warning": {
+      "fg": { "value": "{palette.amber.1700}" },
+      "bg": { "value": "{palette.amber.200}" }
+    },
+    "info": {
+      "fg": { "value": "{palette.blue.1700}" },
+      "bg": { "value": "{palette.blue.200}" }
+    },
+    "debug": {
+      "fg": { "value": "root.warning.fg" },
+      "bg": { "value": "root.warning.bg" }
+    }
+  }
+}

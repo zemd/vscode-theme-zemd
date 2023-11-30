@@ -1,0 +1,6 @@
+{
+  "popup": {
+    "fg": { "value": "{panel.fg}" },
+    "bg": { "value": "{panel.bg}" }
+  }
+}

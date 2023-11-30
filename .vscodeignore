@@ -3,3 +3,9 @@
 .gitignore
 vsc-extension-quickstart.md
 bun.lockb
+.github/
+/node-modules/
+bun.lockb
+/package.json
+/src/
+/build/

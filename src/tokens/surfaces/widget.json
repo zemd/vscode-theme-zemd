@@ -1,0 +1,21 @@
+{
+  "widget": {
+    "fg": { "value": "{panel.secondary.fg}" },
+    "bg": { "value": "{panel.secondary.bg}" },
+    "border": { "value": "{palette.orange.100}" },
+    "secondary": {
+      "fg": { "value": "{panel.fg}" },
+      "bg": { "value": "{panel.bg}" }
+    },
+    "active": {
+      "fg": { "value": "{canvas.fg}" },
+      "bg": { "value": "{canvas.bg}" },
+      "border": { "value": "{canvas.bg}" },
+      "accent": { "value": "#3f90f9" }
+    },
+    "hover": {
+      "fg": { "value": "{canvas.fg}" },
+      "bg": { "value": "{canvas.bg}" }
+    }
+  }
+}

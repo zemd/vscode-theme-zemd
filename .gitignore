@@ -1,2 +1,7 @@
 node_modules
 *.vsix
+.DS_Store
+/themes/
+bun.lockb
+build
+src/generated

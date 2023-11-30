@@ -1,0 +1,6 @@
+{
+  "overlay": {
+    "fg": { "value": "{popup.fg}" },
+    "bg": { "value": "{popup.bg}" }
+  }
+}

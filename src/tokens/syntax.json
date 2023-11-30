@@ -1,0 +1,93 @@
+{
+  "syntax": {
+    "fg": { "value": "{palette.gray.2300}" },
+    
+    "class": {
+      "fg": { "value": "{palette.gray.2300}" }
+    },
+    "comment": {
+      "fg": { "value": "{palette.gray.1400}" }
+    },
+    "decorator": {
+      "fg": { "value": "{palette.magenta.1600}" }
+    },
+    "enum": {
+      "fg": { "value": "{palette.magenta.1600}" }
+    },
+    "enumMember": {
+      "fg": { "value": "{palette.purple.1700}" }
+    },
+    "event": {
+      "fg": { "value": "#883311" }
+    },
+    "function": {
+      "fg": { "value": "{palette.blue.1900}" }
+    },
+    "function.declaration": {
+      "fg": { "value": "{palette.mediumorange.1600}" }
+    },
+    "interface": {
+      "fg": { "value": "{syntax.fg}" }
+    },
+    "keyword": {
+      "fg": { "value": "{palette.mediumorange.1600}" }
+    },
+    "label": {
+      "fg": "#ff0000"
+    },
+    "macro": {
+      "fg": "{palette.red.1500}"
+    },
+    "method": {
+      "fg": { "value": "{palette.blue.1900}" }
+    },
+    "namespace": {
+      "fg": { "value": "{palette.mediumorange.1600}" }
+    },
+    "number": {
+      "fg": { "value": "{palette.green.2200}" }
+    },
+    "operator": {
+      "fg": { "value": "{palette.gray.1900}" }
+    },
+    "parameter": {
+      "fg": { "value": "{palette.gray.2300}" },
+      "fontStyle": { "value": "italic" }
+    },
+    "property": {
+      "fg": { "value": "{palette.purple.1700}" }
+    },
+    "regexp": {
+      "fg": { "value": "{palette.red.1600}" }
+    },
+    "string": {
+      "fg": { "value": "{palette.mediumgreen.1600}" }
+    },
+    "struct": {
+      "fg": { "value": "{palette.mediumorange.1600}" }
+    },
+    "typeParameter": {
+      "fg": { "value": "{palette.teal.1600}" }
+    },
+    "type": {
+      "fg": { "value": "{palette.gray.2300}" },
+      "fontStyle": { "value": "italic" }
+    },
+    "type.declaration": {
+      "fg": { "value": "{palette.mediumorange.1600}" }
+    },
+    "variable": {
+      "fg": { "value": "{palette.yellow.2300}" }
+    },
+    "////":"////",
+    "punctuation": {
+      "fg": { "value": "{palette.gray.1600}" }
+    },
+    "tag": {
+      "fg": { "value": "{palette.green.2200}" }
+    },
+    "dimmed": {
+      "fg": { "value": "{palette.gray.1800}" }
+    }
+  }
+}
