@@ -4,8 +4,10 @@
 vsc-extension-quickstart.md
 bun.lockb
 .github/
-/node-modules/
+node-modules/**
 bun.lockb
-/package.json
-/src/
-/build/
+package.json
+src/**
+build/**
+tsconfig.json
+assets/**
