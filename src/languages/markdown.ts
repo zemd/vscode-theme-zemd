@@ -43,4 +43,5 @@ export default [
   scope("markup.inline.raw.string.markdown", tokens.syntax.string.fg),
   scope("markup.bold.markdown", "", "bold"),
   scope("markup.italic.markdown", "", "italic"),
+  scope("constant.language.character-escape.mdx", tokens.syntax.macro.fg),
 ];

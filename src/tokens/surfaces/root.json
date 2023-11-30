@@ -1,7 +1,7 @@
 {
   "root": {
     "fg": { "value": "{palette.gray.2300}" },
-    "bg": { "value": "{palette.gray.400}" },
+    "bg": { "value": "{palette.gray.500}" },
     "error": {
       "fg": { "value": "{palette.red.1700}" },
       "bg": { "value": "{palette.error.200}" }
