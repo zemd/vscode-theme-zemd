@@ -81,7 +81,7 @@ export default [
       "variable.other.object.property",
       "support.variable.property",
       "variable.object.property",
-      "meta.object-literal.key.js",
+      "meta.object-literal.key",
     ],
     tokens.syntax.property.fg
   ),

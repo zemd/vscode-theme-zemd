@@ -1,7 +1,7 @@
 {
   "panel": {
     "fg": { "value": "{palette.gray.1900}" },
-    "bg": { "value": "{palette.gray.400}" },
+    "bg": { "value": "{palette.gray.300}" },
     "header": {
       "fg": { "value": "{palette.gray.1200}" }
     },
