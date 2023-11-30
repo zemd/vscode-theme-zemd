@@ -27,8 +27,9 @@
   "scripts": {
     "dev": "nodemon",
     "build": "bun src/index.ts",
+    "vscode:prepublish": "bun run build",
     "package": "mkdir build && vsce package -o ./build/zemd-vscode-theme.vsix",
-    "publish": "vsce publish"
+    "publish": "vsce publish minor"
   },
   "author": "Dmytro Zelenetskyi <dmytro.zelenetskyi@gmail.com>",
   "license": "Apache-2.0",
