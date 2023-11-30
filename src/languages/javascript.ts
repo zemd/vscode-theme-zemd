@@ -1,7 +1,7 @@
 import tokens from "../generated/tokens.json";
 import { scope as scopeOrig, type TFontStyle } from "../utils.js";
 
-const decorateScope = (scp: string, modifiers = ["ts", "tsx", "js"]): string[] => {
+const decorateScope = (scp: string, modifiers = ["ts", "tsx", "js", "jsx"]): string[] => {
   return modifiers.map((m) => `${scp}.${m}`);
 };
 
