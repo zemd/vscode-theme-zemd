@@ -45,11 +45,12 @@ export default [
       "punctuation.definition.string.end.go",
       "string.quoted.double.go",
       "constant.other.rune.go",
+      "string.quoted.raw.go",
     ],
     tokens.syntax.string.fg
   ),
   scope(["variable.other.assignment.go", "variable.other.declaration.go"], tokens.syntax.variable.fg),
-  scope(["keyword.operator.assignment.go"], tokens.syntax.operator.fg),
+  scope(["keyword.operator.assignment.go", "keyword.operator.address.go"], tokens.syntax.operator.fg),
   scope(["constant.numeric.decimal.go"], tokens.syntax.number.fg, "underline"),
   scope(["support.function.go", "support.function.builtin.go"], tokens.syntax.function.fg),
 ];
