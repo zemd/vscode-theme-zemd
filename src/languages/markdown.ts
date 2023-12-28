@@ -2,7 +2,7 @@ import tokens from "../generated/tokens.json";
 import { scope } from "../utils.js";
 
 export default [
-  scope("entity.name.section.markdown", tokens.syntax.property.fg, "italic"),
+  scope(["entity.name.section.markdown", "entity.name.section.mdx"], tokens.syntax.property.fg, "italic"),
   scope("punctuation.definition.heading.markdown", "", "italic"),
   scope("invalid.deprecated.entity.other.attribute-name.html", tokens.syntax.parameter.fg, "italic"),
   scope(
@@ -10,6 +10,7 @@ export default [
       "punctuation.definition.quote.begin.markdown",
       "punctuation.definition.quote.end.markdown",
       "punctuation.definition.constant.markdown",
+      "string.other.begin.link.mdx",
     ],
     tokens.syntax.punctuation.fg
     // "italic"
@@ -33,10 +34,15 @@ export default [
       "markup.heading.setext.1.markdown",
       "markup.heading.setext.2.markdown",
       "punctuation.definition.italic.markdown",
+      "punctuation.definition.heading.mdx",
+      "string.other.begin.link.mdx",
+      "string.other.begin.mdx",
+      "string.other.end.mdx",
+      "string.other.strong.asterisk.mdx",
     ],
     tokens.syntax.keyword.fg
   ),
-  scope(["string.other.link.title.markdown"], tokens.syntax.string.fg, "underline"),
+  scope(["string.other.link.title.markdown", "string.other.link.destination.mdx"], tokens.syntax.string.fg, "underline"),
   scope("markup.underline.link.markdown", tokens.syntax.function.fg, "underline"),
   scope(["constant.other.reference.link.markdown"], tokens.syntax.variable.fg),
   scope(["fenced_code.block.language.markdown", "fenced_code.block.language"], tokens.syntax.number.fg),

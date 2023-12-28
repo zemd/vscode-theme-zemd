@@ -9,6 +9,8 @@ export default [
       "punctuation.separator.sequence.yaml",
       "punctuation.separator.key-value.mapping.yaml",
       "meta.flow-mapping.yaml",
+      "string.other.begin.yaml",
+      "string.other.end.yaml"
     ],
     tokens.syntax.punctuation.fg
   ),

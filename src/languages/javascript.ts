@@ -104,6 +104,15 @@ export default [
   scope("entity.name.tag", tokens.syntax.function.fg),
   scope("entity.other.attribute-name", tokens.syntax.parameter.fg, "italic"),
 
+  // Astro
+  scopeOrig([ "entity.name.tag.astro"], tokens.syntax.function.fg),
+  scopeOrig("support.class.component.astro", tokens.syntax.tag.fg),
+  scopeOrig("entity.other.attribute-name.astro", tokens.syntax.parameter.fg, "italic"),
+  scopeOrig(
+    ["punctuation.definition.string.begin.astro", "string.quoted.astro", "punctuation.definition.string.end.astro"],
+    tokens.syntax.string.fg
+  ),
+
   // JSDOC
   scopeOrig(["punctuation.definition.block.tag.jsdoc", "storage.type.class.jsdoc"], tokens.syntax.keyword.fg),
   scopeOrig("entity.name.type.instance.jsdoc", tokens.syntax.parameter.fg, "italic"),

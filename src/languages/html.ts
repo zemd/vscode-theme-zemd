@@ -2,7 +2,7 @@ import tokens from "../generated/tokens.json";
 import { scope } from "../utils.js";
 
 export default [
-  scope("entity.name.tag.html", tokens.syntax.function.fg),
+  scope(["entity.name.tag.html"], tokens.syntax.function.fg),
   scope("entity.other.attribute-name.html", tokens.syntax.parameter.fg, "italic"),
   scope(
     ["string.quoted.double.html", "punctuation.definition.string.begin.html", "punctuation.definition.string.end.html"],
