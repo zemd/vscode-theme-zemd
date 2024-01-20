@@ -41,6 +41,7 @@ export default [
       "keyword.control.at-rule.screen.tailwind",
       "keyword.control.at-rule.tailwind.tailwind",
       "keyword.control.at-rule.apply.tailwind",
+      "keyword.control.at-rule.layer",
     ],
     tokens.syntax.keyword.fg
   ),
@@ -69,6 +70,8 @@ export default [
       "punctuation.section.function.scss",
       "punctuation.section.keyframes.begin.scss",
       "punctuation.section.keyframes.end.scss",
+      "punctuation.section.layer.begin.bracket.curly",
+      "punctuation.section.layer.end.bracket.curly"
     ],
     tokens.syntax.punctuation.fg
   ),
@@ -99,6 +102,9 @@ export default [
   ),
   scope("meta.property-value.css", tokens.syntax.variable.fg),
   scope("variable.css", tokens.syntax.variable.fg),
-  scope("meta.selector.css", tokens.syntax.parameter.fg, "italic"),
-  scope("variable.argument.css", tokens.syntax.parameter.fg, "italic"),
+  scope(
+    ["meta.selector.css", "variable.argument.css", "variable.parameter.layer"],
+    tokens.syntax.parameter.fg,
+    "italic"
+  ),
 ];
