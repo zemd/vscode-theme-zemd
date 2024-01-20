@@ -22,6 +22,7 @@ import cssSyntax from "./languages/css.js";
 import goSyntax from "./languages/golang.js";
 import graphqlSyntax from "./languages/graphql.js";
 import groovySyntax from "./languages/groovy.js";
+import handlebarsSyntax from "./languages/handlebars.js";
 import htmlSyntax from "./languages/html.js";
 import iniSyntax from "./languages/ini.js";
 import javaSyntax from "./languages/java.js";
@@ -82,6 +83,7 @@ export const makeTheme = () => {
       ...goSyntax,
       ...graphqlSyntax,
       ...groovySyntax,
+      ...handlebarsSyntax,
       ...htmlSyntax,
       ...iniSyntax,
       ...javaSyntax,
