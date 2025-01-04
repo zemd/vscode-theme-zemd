@@ -1,4 +1,4 @@
-import tokens from "../generated/tokens.json";
+import tokens from "../generated/tokens.json" assert { type: "json" };
 import { scope } from "../utils.js";
 
 export default [
@@ -30,18 +30,19 @@ export default [
       "entity.name.tag.css",
       "entity.name.tag.wildcard.css",
       "punctuation.definition.keyword.css",
-      "keyword.control.at-rule.media.css",
-      "keyword.control.at-rule.import.css",
-      "keyword.control.at-rule.keyframes.css",
+      // "keyword.control.at-rule.media.css",
+      // "keyword.control.at-rule.import.css",
+      // "keyword.control.at-rule.keyframes.css",
       "punctuation.definition.keyword.scss",
-      "keyword.control.at-rule.media.scss",
-      "keyword.control.at-rule.keyframes.scss",
+      // "keyword.control.at-rule.media.scss",
+      // "keyword.control.at-rule.keyframes.scss",
       "entity.other.attribute-name.scss",
       "meta.at-rule.keyframes.scss",
-      "keyword.control.at-rule.screen.tailwind",
-      "keyword.control.at-rule.tailwind.tailwind",
-      "keyword.control.at-rule.apply.tailwind",
-      "keyword.control.at-rule.layer",
+      // "keyword.control.at-rule.screen",
+      // "keyword.control.at-rule.tailwind.tailwind",
+      // "keyword.control.at-rule.apply.tailwind",
+      // "keyword.control.at-rule.layer",
+      "keyword.control.at-rule"
     ],
     tokens.syntax.keyword.fg
   ),

@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import StyleDictionary from "style-dictionary";
 
 async function buildDesignTokens() {
-  const styleDictionary = StyleDictionary.extend({
+  const styleDictionary = new StyleDictionary({
     source: ["./src/tokens/**/*.{json,js}"],
     platforms: {
       json: {

@@ -1,4 +1,4 @@
-import tokens from "../generated/tokens.json";
+import tokens from "../generated/tokens.json" assert { type: "json" };
 import { scope } from "../utils.js";
 
 export default [

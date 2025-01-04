@@ -1,4 +1,4 @@
-import tokens from "../generated/tokens.json";
+import tokens from "../generated/tokens.json" assert { type: "json" };
 import chroma from "chroma-js";
 
 export default {
@@ -10,7 +10,7 @@ export default {
   "sideBarSectionHeader.border": "#00000000",
 
   "sideBarTitle.foreground": tokens.panel.fg,
-  
+
   "list.activeSelectionBackground": chroma(tokens.panel.active.bg).alpha(0.5).hex(),
   "list.inactiveSelectionBackground": chroma(tokens.panel.highlight.bg).alpha(0.8).hex(),
   "list.focusOutline": "#00000000",

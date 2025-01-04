@@ -1,4 +1,4 @@
-import tokens from "../generated/tokens.json";
+import tokens from "../generated/tokens.json" assert { type: "json" };
 
 export default {
   // ↓ Overall border color for focused elements. This color is only used if not overridden by a component.

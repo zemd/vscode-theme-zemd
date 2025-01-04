@@ -1,5 +1,5 @@
-import { semantic } from './utils.js';
-import tokens from "./generated/tokens.json";
+import { semantic } from "./utils.js";
+import tokens from "./generated/tokens.json" assert { type: "json" };
 // ui
 import uiBaseColors from "./ui/base.js";
 import uiEditorColors from "./ui/editor.js";
@@ -20,6 +20,7 @@ import coreSyntax from "./languages/core.js";
 import jsSyntax from "./languages/javascript.js";
 import cssSyntax from "./languages/css.js";
 import goSyntax from "./languages/golang.js";
+import godotSyntax from "./languages/godot.js";
 import graphqlSyntax from "./languages/graphql.js";
 import groovySyntax from "./languages/groovy.js";
 import handlebarsSyntax from "./languages/handlebars.js";
@@ -32,6 +33,7 @@ import pythonSyntax from "./languages/python.js";
 import rustSyntax from "./languages/rust.js";
 import shellSyntax from "./languages/shell.js";
 import sqlSyntax from "./languages/sql.js";
+import swiftSyntax from "./languages/swift.js";
 import tfSyntax from "./languages/terraform.js";
 import tomlSyntax from "./languages/toml.js";
 import vcsSyntax from "./languages/vcs.js";
@@ -73,7 +75,7 @@ export const makeTheme = () => {
       keyword: semantic(tokens.syntax.keyword.fg),
       number: semantic(tokens.syntax.number.fg),
       regexp: semantic(tokens.syntax.regexp.fg),
-      operator: semantic(tokens.syntax.operator.fg)
+      operator: semantic(tokens.syntax.operator.fg),
     },
     tokenColors: [
       ...coreSyntax,
@@ -81,6 +83,7 @@ export const makeTheme = () => {
       ...jsSyntax,
       ...cssSyntax,
       ...goSyntax,
+      ...godotSyntax,
       ...graphqlSyntax,
       ...groovySyntax,
       ...handlebarsSyntax,
@@ -93,6 +96,7 @@ export const makeTheme = () => {
       ...rustSyntax,
       ...shellSyntax,
       ...sqlSyntax,
+      ...swiftSyntax,
       ...tfSyntax,
       ...tomlSyntax,
       ...vcsSyntax,

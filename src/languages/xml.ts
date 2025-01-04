@@ -1,5 +1,5 @@
 import { scope } from "./../utils.js";
-import tokens from "../generated/tokens.json";
+import tokens from "../generated/tokens.json" assert { type: "json" };
 
 export default [
   scope("entity.name.tag.localname.xml", tokens.syntax.function.fg),

@@ -1,4 +1,4 @@
-import tokens from "../generated/tokens.json";
+import tokens from "../generated/tokens.json" assert { type: "json" };
 import { scope as scopeOrig, type TFontStyle } from "../utils.js";
 
 const decorateScope = (scp: string, modifiers = ["ts", "tsx", "js", "jsx"]): string[] => {
@@ -59,6 +59,7 @@ export default [
       "keyword.control.default", // export `default`
       "keyword.operator.expression.delete",
       "storage.type.namespace",
+      // "variable.other.readwrite.ts" // ???
     ],
     tokens.syntax.keyword.fg
   ),
