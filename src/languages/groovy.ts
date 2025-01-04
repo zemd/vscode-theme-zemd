@@ -9,10 +9,10 @@ export default [
       "punctuation.definition.string.end.groovy",
       "string.quoted.double.groovy",
     ],
-    tokens.syntax.string.fg
+    tokens.syntax.string.fg,
   ),
-  scope([
-    "punctuation.definition.method-parameters.begin.groovy",
-    "punctuation.definition.method-parameters.end.groovy"
-  ], tokens.syntax.punctuation.fg),
+  scope(
+    ["punctuation.definition.method-parameters.begin.groovy", "punctuation.definition.method-parameters.end.groovy"],
+    tokens.syntax.punctuation.fg,
+  ),
 ];

@@ -10,4 +10,3 @@ Please provide before/after screenshots for any visual changes
 
 - [ ] Added/updated colors
 - [ ] Added/updated documentation/README
-

@@ -14,9 +14,9 @@ export default [
       "keyword.operator.arrow.skinny.rust",
       "storage.modifier.rust",
       "entity.name.type.primitive.rust",
-      "variable.language.super.rust"
+      "variable.language.super.rust",
     ],
-    tokens.syntax.keyword.fg
+    tokens.syntax.keyword.fg,
   ),
   scope("variable.language.super.rust", "", "bold"),
   scope(
@@ -30,7 +30,7 @@ export default [
       "punctuation.brackets.square.rust",
       "keyword.operator.key-value.rust",
     ],
-    tokens.syntax.punctuation.fg
+    tokens.syntax.punctuation.fg,
   ),
   scope("meta.function.call.rust", tokens.syntax.function.fg),
   scope(["variable.other.rust", "variable.language.self.rust", "constant.other.caps.rust"], tokens.syntax.variable.fg),
@@ -46,7 +46,7 @@ export default [
       "entity.name.type.result.rust",
       "entity.name.type.option.rust",
     ],
-    tokens.syntax.typeParameter.fg
+    tokens.syntax.typeParameter.fg,
   ),
   scope("entity.name.type.enum.rust", tokens.syntax.enum.fg),
   scope("keyword.operator.logical.rust", tokens.syntax.fg),

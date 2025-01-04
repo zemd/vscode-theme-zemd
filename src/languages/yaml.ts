@@ -10,14 +10,11 @@ export default [
       "punctuation.separator.key-value.mapping.yaml",
       "meta.flow-mapping.yaml",
       "string.other.begin.yaml",
-      "string.other.end.yaml"
+      "string.other.end.yaml",
     ],
-    tokens.syntax.punctuation.fg
+    tokens.syntax.punctuation.fg,
   ),
-  scope(
-    ["variable.other.read.github-actions-expression", "entity.name.tag.yaml"],
-    tokens.syntax.variable.fg
-  ),
+  scope(["variable.other.read.github-actions-expression", "entity.name.tag.yaml"], tokens.syntax.variable.fg),
   scope(
     [
       "meta.embedded.block.github-actions-expression",
@@ -25,7 +22,7 @@ export default [
       "punctuation.definition.mapping.begin.yaml",
       "punctuation.definition.mapping.end.yaml",
     ],
-    tokens.syntax.keyword.fg
+    tokens.syntax.keyword.fg,
   ),
   scope(
     [
@@ -35,9 +32,9 @@ export default [
       "string.quoted.single.github-actions-expression",
       "string.quoted.double.yaml",
       "punctuation.definition.string.begin.yaml",
-      "punctuation.definition.string.end.yaml"
+      "punctuation.definition.string.end.yaml",
     ],
-    tokens.syntax.string.fg
+    tokens.syntax.string.fg,
   ),
   scope(["constant.numeric.float.yaml", "constant.numeric.integer.yaml"], tokens.syntax.number.fg, "underline"),
   scope("support.function.github-actions-expression", tokens.syntax.function.fg),

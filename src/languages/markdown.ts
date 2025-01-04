@@ -12,7 +12,7 @@ export default [
       "punctuation.definition.constant.markdown",
       "string.other.begin.link.mdx",
     ],
-    tokens.syntax.punctuation.fg
+    tokens.syntax.punctuation.fg,
     // "italic"
   ),
   scope("markup.quote.markdown", tokens.syntax.dimmed.fg, "italic"),
@@ -40,9 +40,13 @@ export default [
       "string.other.end.mdx",
       "string.other.strong.asterisk.mdx",
     ],
-    tokens.syntax.keyword.fg
+    tokens.syntax.keyword.fg,
   ),
-  scope(["string.other.link.title.markdown", "string.other.link.destination.mdx"], tokens.syntax.string.fg, "underline"),
+  scope(
+    ["string.other.link.title.markdown", "string.other.link.destination.mdx"],
+    tokens.syntax.string.fg,
+    "underline",
+  ),
   scope("markup.underline.link.markdown", tokens.syntax.function.fg, "underline"),
   scope(["constant.other.reference.link.markdown"], tokens.syntax.variable.fg),
   scope(["fenced_code.block.language.markdown", "fenced_code.block.language"], tokens.syntax.number.fg),

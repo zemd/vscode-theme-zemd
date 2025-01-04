@@ -12,7 +12,7 @@ export default [
       "keyword.input.graphql",
       "keyword.interface.graphql",
       "keyword.enum.graphql",
-      "keyword.scalar.graphql"
+      "keyword.scalar.graphql",
     ],
     tokens.syntax.keyword.fg,
   ),
@@ -23,5 +23,5 @@ export default [
   scope(["support.type.enum.graphql"], tokens.syntax.enum.fg),
   scope(["constant.character.enum.graphql"], tokens.syntax.enumMember.fg),
   scope(["support.type.graphql", "entity.scalar.graphql"], tokens.syntax.type.fg),
-  scope(["keyword.operator.nulltype.graphql"], tokens.syntax.punctuation.fg)
+  scope(["keyword.operator.nulltype.graphql"], tokens.syntax.punctuation.fg),
 ];

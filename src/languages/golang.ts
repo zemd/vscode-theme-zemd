@@ -19,7 +19,7 @@ export default [
       "storage.type.byte.go",
       "storage.type.boolean.go",
     ],
-    tokens.syntax.keyword.fg
+    tokens.syntax.keyword.fg,
   ),
   scope(
     [
@@ -36,7 +36,7 @@ export default [
       "punctuation.terminator.go",
       "punctuation.other.colon.go",
     ],
-    tokens.syntax.punctuation.fg
+    tokens.syntax.punctuation.fg,
   ),
   scope(
     [
@@ -47,7 +47,7 @@ export default [
       "constant.other.rune.go",
       "string.quoted.raw.go",
     ],
-    tokens.syntax.string.fg
+    tokens.syntax.string.fg,
   ),
   scope(["variable.other.assignment.go", "variable.other.declaration.go"], tokens.syntax.variable.fg),
   scope(["keyword.operator.assignment.go", "keyword.operator.address.go"], tokens.syntax.operator.fg),

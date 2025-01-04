@@ -5,11 +5,11 @@ export default [
   scope(["keyword.control.import.python", "variable.language.special.self.python"], tokens.syntax.keyword.fg, "bold"),
   scope(
     ["meta.function-call.generic.python", "support.function.builtin.python", "support.function.magic.python"],
-    tokens.syntax.function.fg
+    tokens.syntax.function.fg,
   ),
   scope(
     ["support.variable.magic.python", "constant.other.caps.python", "meta.function-call.arguments.python"],
-    tokens.syntax.variable.fg
+    tokens.syntax.variable.fg,
   ),
   scope(
     [
@@ -33,7 +33,7 @@ export default [
       "punctuation.definition.inheritance.begin.python",
       "punctuation.definition.inheritance.end.python",
     ],
-    tokens.syntax.punctuation.fg
+    tokens.syntax.punctuation.fg,
   ),
   scope(
     [
@@ -42,7 +42,7 @@ export default [
       "storage.type.string.python",
       "string.quoted.docstring.multi.python",
     ],
-    tokens.syntax.string.fg
+    tokens.syntax.string.fg,
   ),
   scope("meta.attribute.python", tokens.syntax.property.fg),
   scope("support.type.exception.python", tokens.syntax.macro.fg, "bold"),
@@ -55,7 +55,7 @@ export default [
       "constant.language.python",
       "keyword.operator.logical.python",
     ],
-    tokens.syntax.keyword.fg
+    tokens.syntax.keyword.fg,
   ),
   scope("keyword.operator.arithmetic.python", tokens.syntax.fg),
   scope(["constant.numeric.dec.python"], tokens.syntax.number.fg, "underline"),

@@ -12,7 +12,7 @@ export default [
       "variable.parameter.screen.tailwind",
       "variable.parameter.tailwind.tailwind",
     ],
-    tokens.syntax.variable.fg
+    tokens.syntax.variable.fg,
   ),
   scope("entity.other.attribute-name.id.css", "", "underline"),
   scope("support.type.property-name.css", tokens.syntax.property.fg),
@@ -23,7 +23,7 @@ export default [
       "punctuation.definition.string.end.css",
       "string.quoted.double.css",
     ],
-    tokens.syntax.string.fg
+    tokens.syntax.string.fg,
   ),
   scope(
     [
@@ -42,9 +42,9 @@ export default [
       // "keyword.control.at-rule.tailwind.tailwind",
       // "keyword.control.at-rule.apply.tailwind",
       // "keyword.control.at-rule.layer",
-      "keyword.control.at-rule"
+      "keyword.control.at-rule",
     ],
-    tokens.syntax.keyword.fg
+    tokens.syntax.keyword.fg,
   ),
   scope("constant.other.color.rgb-value.hex.css", tokens.syntax.fg),
   scope("support.constant.vendored.property-value.css", tokens.syntax.typeParameter.fg),
@@ -72,9 +72,9 @@ export default [
       "punctuation.section.keyframes.begin.scss",
       "punctuation.section.keyframes.end.scss",
       "punctuation.section.layer.begin.bracket.curly",
-      "punctuation.section.layer.end.bracket.curly"
+      "punctuation.section.layer.end.bracket.curly",
     ],
-    tokens.syntax.punctuation.fg
+    tokens.syntax.punctuation.fg,
   ),
   scope("constant.numeric.css", tokens.syntax.number.fg, "underline"),
   scope(["punctuation.definition.comment.begin.css", "comment.block.css"], tokens.syntax.comment.fg, "italic"),
@@ -88,7 +88,7 @@ export default [
       "support.function.gradient.css",
       "support.function.misc.scss",
     ],
-    tokens.syntax.function.fg
+    tokens.syntax.function.fg,
   ),
   scope("support.constant.property-value.css", tokens.syntax.keyword.fg),
   scope(["meta.property-name.css", "support.type.property-name.media.css"], tokens.syntax.parameter.fg, "italic"),
@@ -99,13 +99,13 @@ export default [
   scope("keyword.other.important.css", tokens.syntax.macro.fg),
   scope(
     ["entity.other.keyframe-offset.percentage.css", "entity.other.keyframe-offset.css"],
-    tokens.syntax.parameter.fg
+    tokens.syntax.parameter.fg,
   ),
   scope("meta.property-value.css", tokens.syntax.variable.fg),
   scope("variable.css", tokens.syntax.variable.fg),
   scope(
     ["meta.selector.css", "variable.argument.css", "variable.parameter.layer"],
     tokens.syntax.parameter.fg,
-    "italic"
+    "italic",
   ),
 ];

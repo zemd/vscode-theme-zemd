@@ -14,14 +14,14 @@ export default [
       "keyword.default.zig",
     ],
     tokens.syntax.keyword.fg,
-    "bold"
+    "bold",
   ),
   scope("string.quoted.double.zig", tokens.syntax.string.fg),
   scope(["keyword.operator.bitwise.zig"], tokens.syntax.operator.fg),
   scope("variable.zig", tokens.syntax.variable.fg),
   scope(
     ["keyword.constant.bool.zig", "keyword.control.conditional.zig", "keyword.control.repeat.zig"],
-    tokens.syntax.keyword.fg
+    tokens.syntax.keyword.fg,
   ),
   scope(["constant.numeric.float.zig", "constant.numeric.hexfloat.zig"], tokens.syntax.number.fg, "underline"),
 ];

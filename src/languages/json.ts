@@ -12,7 +12,7 @@ export default [
       "punctuation.definition.string.begin.json",
       "punctuation.definition.string.end.json",
     ],
-    tokens.syntax.string.fg
+    tokens.syntax.string.fg,
   ),
   scope("constant.language.json", tokens.syntax.keyword.fg),
   scope("constant.numeric.json", tokens.syntax.number.fg, "underline"),
@@ -22,7 +22,7 @@ export default [
       "punctuation.definition.array.end.json.comments",
       "punctuation.separator.array.json",
     ],
-    tokens.syntax.punctuation.fg
+    tokens.syntax.punctuation.fg,
   ),
   scope(
     [
@@ -30,6 +30,6 @@ export default [
       "punctuation.separator.array.json.comments",
       "punctuation.separator.dictionary.key-value.json",
     ],
-    tokens.syntax.punctuation.fg
+    tokens.syntax.punctuation.fg,
   ),
 ];

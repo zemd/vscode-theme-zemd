@@ -39,7 +39,7 @@ export default [
       "punctuation.separator.key-value", // origin: tsx, ts, js
       "punctuation.destructuring", // origin: tsx, ts, js
     ],
-    tokens.syntax.punctuation.fg
+    tokens.syntax.punctuation.fg,
   ),
   scope(
     [
@@ -47,7 +47,7 @@ export default [
       "punctuation.definition.template-expression.end",
       "punctuation.section.embedded",
     ],
-    tokens.syntax.keyword.fg
+    tokens.syntax.keyword.fg,
   ),
   scope("punctuation.definition.comment", tokens.syntax.comment.fg, "italic"),
 ];

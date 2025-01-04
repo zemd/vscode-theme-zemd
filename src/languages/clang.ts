@@ -83,7 +83,7 @@ export default [
       "constant.language.true.cpp",
       "storage.modifier.const.cpp",
     ],
-    tokens.syntax.keyword.fg
+    tokens.syntax.keyword.fg,
   ),
   scope("storage.modifier.specifier.extern.cpp", "", "bold"),
   scope("keyword.operator.sizeof.c", tokens.syntax.function.fg),
@@ -111,7 +111,7 @@ export default [
       "keyword.control.directive.undef.cpp",
       "keyword.control.directive.pragma.cuda-cpp",
     ],
-    tokens.syntax.property.fg
+    tokens.syntax.property.fg,
   ),
   scope(
     [
@@ -123,7 +123,7 @@ export default [
       "storage.type.template.argument.class.cpp",
     ],
     tokens.syntax.parameter.fg,
-    "italic"
+    "italic",
   ),
   scope(
     [
@@ -143,7 +143,7 @@ export default [
       "variable.other.object",
       "storage.type.class.doxygen.cpp",
     ],
-    tokens.syntax.variable.fg
+    tokens.syntax.variable.fg,
   ),
   scope(
     [
@@ -161,7 +161,7 @@ export default [
       "punctuation.definition.string.begin.c",
       "punctuation.definition.string.end.c",
     ],
-    tokens.syntax.string.fg
+    tokens.syntax.string.fg,
   ),
   scope(
     [
@@ -186,7 +186,7 @@ export default [
       "constant.numeric.exponent.decimal.cpp",
     ],
     tokens.syntax.number.fg,
-    "underline"
+    "underline",
   ),
   scope(
     [
@@ -195,7 +195,7 @@ export default [
       "keyword.operator.assignment.c",
       "keyword.operator.assignment.cuda-cpp",
     ],
-    tokens.syntax.operator.fg
+    tokens.syntax.operator.fg,
   ),
   scope("entity.name.type.enum.cpp", tokens.syntax.enum.fg),
   scope("variable.other.enummember.cpp", tokens.syntax.enumMember.fg),
@@ -221,7 +221,7 @@ export default [
       "punctuation.section.angle-brackets.end.template.call.cpp",
       "keyword.operator.delete.array.bracket.cpp",
     ],
-    tokens.syntax.punctuation.fg
+    tokens.syntax.punctuation.fg,
   ),
   scope("entity.name.other.preprocessor.macro.predefined.probably.VA_ARGS.cpp", tokens.syntax.macro.fg),
 ];

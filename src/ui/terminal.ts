@@ -1,7 +1,7 @@
 const tokens = require("../generated/tokens.json");
 const chroma = require("chroma-js");
 
-export default{
+export default {
   "terminal.foreground": "#c4c8c6",
   "terminal.selectionBackground": "#6f734340",
   "terminalCursor.background": "#0087FF",

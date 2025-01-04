@@ -10,7 +10,7 @@ export default [
   scope("constant.other.table-name.sql", tokens.syntax.enum.fg),
   scope(
     ["support.function.security.sql", "support.function.aggregate.sql", "support.function.string.sql"],
-    tokens.syntax.function.fg
+    tokens.syntax.function.fg,
   ),
   scope(
     [
@@ -19,7 +19,7 @@ export default [
       "punctuation.definition.string.end.sql",
       "string.quoted.double.sql",
     ],
-    tokens.syntax.string.fg
+    tokens.syntax.string.fg,
   ),
   scope(["keyword.operator.comparison.sql"], tokens.syntax.operator.fg),
   scope(["punctuation.section.scope.begin.sql", "punctuation.section.scope.end.sql"], tokens.syntax.punctuation.fg),

@@ -12,7 +12,7 @@ export default [
       "support.type.property-name.table.toml",
       "support.type.property-name.array.toml",
     ],
-    tokens.syntax.keyword.fg
+    tokens.syntax.keyword.fg,
   ),
   scope("string.quoted.single.basic.line.toml", tokens.syntax.string.fg),
   scope(
@@ -21,7 +21,7 @@ export default [
       "punctuation.definition.table.inline.toml",
       "punctuation.separator.array.toml",
     ],
-    tokens.syntax.punctuation.fg
+    tokens.syntax.punctuation.fg,
   ),
   scope("constant.numeric.integer.toml", tokens.syntax.number.fg, "underline"),
 ];

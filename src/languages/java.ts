@@ -21,7 +21,7 @@ export default [
       "storage.modifier.extends.java",
       "support.constant.java-properties",
     ],
-    tokens.syntax.keyword.fg
+    tokens.syntax.keyword.fg,
   ),
   scope(["keyword.other.import.java", "keyword.other.package.java"], tokens.syntax.keyword.fg, "bold"),
   scope(
@@ -46,7 +46,7 @@ export default [
       "punctuation.section.catch.end.bracket.curly.java",
       "punctuation.bracket.angle.java",
     ],
-    tokens.syntax.punctuation.fg
+    tokens.syntax.punctuation.fg,
   ),
   scope("variable.parameter.java", tokens.syntax.parameter.fg, "italic"),
   scope(["punctuation.definition.annotation.java", "storage.type.annotation.java"], tokens.syntax.decorator.fg),
@@ -59,7 +59,7 @@ export default [
       "punctuation.definition.string.end.java",
       "string.unquoted.java-properties",
     ],
-    tokens.syntax.string.fg
+    tokens.syntax.string.fg,
   ),
   scope("storage.modifier.import.java", tokens.syntax.dimmed.fg),
   scope("entity.name.type.class.java", tokens.syntax.class.fg),

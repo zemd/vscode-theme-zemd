@@ -28,7 +28,7 @@ export default [
       "keyword.operator.expression.instanceof",
     ],
     tokens.syntax.keyword.fg,
-    "bold"
+    "bold",
   ),
 
   scope(
@@ -61,7 +61,7 @@ export default [
       "storage.type.namespace",
       // "variable.other.readwrite.ts" // ???
     ],
-    tokens.syntax.keyword.fg
+    tokens.syntax.keyword.fg,
   ),
 
   scope("keyword.operator.logical", tokens.syntax.fg),
@@ -73,7 +73,7 @@ export default [
       "support.variable.property.importmeta",
       "entity.name.type.module",
     ],
-    tokens.syntax.variable.fg
+    tokens.syntax.variable.fg,
   ),
   scope(
     [
@@ -84,7 +84,7 @@ export default [
       "variable.object.property",
       "meta.object-literal.key",
     ],
-    tokens.syntax.property.fg
+    tokens.syntax.property.fg,
   ),
   scope(["string.quoted.single", "string.template", "string.quoted.double"], tokens.syntax.string.fg),
   scope("variable.parameter", "", "italic"),
@@ -96,7 +96,7 @@ export default [
     ["keyword.operator.expression.keyof", "storage.type.enum", "keyword.operator.expression.is"],
     tokens.syntax.keyword.fg,
     undefined,
-    ["ts", "tsx"]
+    ["ts", "tsx"],
   ),
 
   // JSX
@@ -106,12 +106,12 @@ export default [
   scope("entity.other.attribute-name", tokens.syntax.parameter.fg, "italic"),
 
   // Astro
-  scopeOrig([ "entity.name.tag.astro"], tokens.syntax.function.fg),
+  scopeOrig(["entity.name.tag.astro"], tokens.syntax.function.fg),
   scopeOrig("support.class.component.astro", tokens.syntax.tag.fg),
   scopeOrig("entity.other.attribute-name.astro", tokens.syntax.parameter.fg, "italic"),
   scopeOrig(
     ["punctuation.definition.string.begin.astro", "string.quoted.astro", "punctuation.definition.string.end.astro"],
-    tokens.syntax.string.fg
+    tokens.syntax.string.fg,
   ),
 
   // JSDOC
@@ -119,7 +119,7 @@ export default [
   scopeOrig("entity.name.type.instance.jsdoc", tokens.syntax.parameter.fg, "italic"),
   scopeOrig(
     ["punctuation.definition.bracket.curly.begin.jsdoc", "punctuation.definition.bracket.curly.end.jsdoc"],
-    tokens.syntax.punctuation.fg
+    tokens.syntax.punctuation.fg,
   ),
   scopeOrig("variable.other.jsdoc", tokens.syntax.variable.fg),
 ];

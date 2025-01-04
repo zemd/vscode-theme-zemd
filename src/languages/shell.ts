@@ -13,7 +13,7 @@ export default [
       "punctuation.definition.variable.makefile",
       "punctuation.definition.subshell",
     ],
-    tokens.syntax.punctuation.fg
+    tokens.syntax.punctuation.fg,
   ),
   scope("entity.name.command.shell", "", "bold"),
   scope(
@@ -24,7 +24,7 @@ export default [
       "punctuation.definition.string.begin.shell",
       "string.quoted.single.shell",
     ],
-    tokens.syntax.string.fg
+    tokens.syntax.string.fg,
   ),
   scope(
     [
@@ -36,7 +36,7 @@ export default [
       "variable.parameter.positional.shell",
       "variable.other.makefile",
     ],
-    tokens.syntax.variable.fg
+    tokens.syntax.variable.fg,
   ),
   scope(
     [
@@ -52,7 +52,7 @@ export default [
       "keyword.control.@.makefile",
       "keyword.control.include.makefile",
     ],
-    tokens.syntax.keyword.fg
+    tokens.syntax.keyword.fg,
   ),
   scope(["support.function.shell.makefile"], tokens.syntax.function.fg),
   scope(["storage.modifier.export.shell"], tokens.syntax.keyword.fg, "bold"),
