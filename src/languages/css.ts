@@ -73,7 +73,7 @@ export default [
       "punctuation.section.keyframes.end.scss",
       "punctuation.section.layer.begin.bracket.curly",
       "punctuation.section.layer.end.bracket.curly",
-      "punctuation.terminator.tailwind.tailwind"
+      "punctuation.terminator.tailwind.tailwind",
     ],
     tokens.syntax.punctuation.fg,
   ),
