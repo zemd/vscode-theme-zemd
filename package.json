@@ -29,7 +29,7 @@
     "dev": "nodemon -e ts,json",
     "build": "bun src/index.ts",
     "vscode:prepublish": "bun run build",
-    "package": "rm -rf ./build && mkdir ./build && vsce package -o ./build/zemd-vscode-theme.vsix",
+    "package": "rm -rf ./build && mkdir ./build && vsce package -o ./build/zemd-vscode-theme-playground.vsix",
     "publish": "vsce publish minor",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky"
