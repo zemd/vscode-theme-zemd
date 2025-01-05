@@ -118,8 +118,30 @@ export default [
   scopeOrig(["punctuation.definition.block.tag.jsdoc", "storage.type.class.jsdoc"], tokens.syntax.keyword.fg),
   scopeOrig("entity.name.type.instance.jsdoc", tokens.syntax.parameter.fg, "italic"),
   scopeOrig(
-    ["punctuation.definition.bracket.curly.begin.jsdoc", "punctuation.definition.bracket.curly.end.jsdoc"],
+    [
+      "punctuation.definition.bracket.curly.begin.jsdoc",
+      "punctuation.definition.bracket.curly.end.jsdoc",
+      "punctuation.accessor.ts",
+    ],
     tokens.syntax.punctuation.fg,
   ),
   scopeOrig("variable.other.jsdoc", tokens.syntax.variable.fg),
+
+
+
+
+
+
+
+
+
+
+
+
+  scopeOrig(["entity.name.type.ts", "entity.other.inherited-class.ts"], tokens.syntax.enum.fg),
+  scopeOrig(["entity.name.type.alias.ts"], tokens.syntax.class.fg, "italic"),
+  scopeOrig(["keyword.operator.expression.infer.ts"], tokens.syntax.namespace.fg ),
+  scopeOrig(["variable.other.constant.object.ts"], tokens.syntax.variable.fg),
+  // scopeOrig(["variable.other.readwrite.ts"], tokens.syntax.variable.fg, "bold"),
+  scopeOrig(["variable.other.object.ts"], tokens.syntax.function.fg),
 ];

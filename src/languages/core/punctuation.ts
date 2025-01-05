@@ -47,7 +47,7 @@ export default [
       "punctuation.definition.template-expression.end",
       "punctuation.section.embedded",
     ],
-    tokens.syntax.keyword.fg,
+    tokens.syntax.punctuation.fg,
   ),
   scope("punctuation.definition.comment", tokens.syntax.comment.fg, "italic"),
 ];

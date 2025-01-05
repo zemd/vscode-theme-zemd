@@ -48,8 +48,8 @@ export const makeTheme = () => {
     semanticHighlighting: true,
     semanticTokenColors: {
       // namespace: semantic(tokens.syntax.namespace.fg),
-      class: semantic(tokens.syntax.class.fg),
-      "class.defaultLibrary": semantic(tokens.syntax.variable.fg),
+      // class: semantic(tokens.syntax.class.fg),
+      // "class.defaultLibrary": semantic(tokens.syntax.variable.fg),
       enum: semantic(tokens.syntax.enum.fg),
       interface: semantic(tokens.syntax.interface.fg),
       "interface.defaultLibrary": semantic(tokens.syntax.variable.fg),
@@ -57,10 +57,10 @@ export const makeTheme = () => {
       "struct.declaration": semantic(tokens.syntax.class.fg),
       typeParameter: semantic(tokens.syntax.typeParameter.fg),
       // "typeParameter.declaration": semantic(tokens.syntax.typeParameter.fg), // TODO:
-      type: semantic(tokens.syntax.type.fg),
+      // type: semantic(tokens.syntax.type.fg),
       "hcl-blockType": semantic(tokens.syntax.keyword.fg),
       parameter: semantic(tokens.syntax.parameter.fg, "italic"),
-      variable: semantic(tokens.syntax.variable.fg),
+      // variable: semantic(tokens.syntax.variable.fg),
       "hcl-blockLabel": semantic(tokens.syntax.function.fg, "bold"),
       property: semantic(tokens.syntax.property.fg),
       enumMember: semantic(tokens.syntax.enumMember.fg),

@@ -1,7 +1,7 @@
 {
   "syntax": {
     "fg": { "value": "{palette.gray.2300}" },
-    
+
     "class": {
       "fg": { "value": "{palette.gray.2300}" }
     },
@@ -77,7 +77,7 @@
       "fg": { "value": "{palette.mediumorange.1600}" }
     },
     "variable": {
-      "fg": { "value": "{palette.yellow.2300}" }
+      "fg": { "value": "{palette.yellow.2500}" }
     },
     "////":"////",
     "punctuation": {
