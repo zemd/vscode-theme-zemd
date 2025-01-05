@@ -1,6 +1,6 @@
 {
-  "name": "zemd-theme-dark",
-  "displayName": "zemd Theme Dark",
+  "name": "zemd-theme-dark-playground",
+  "displayName": "zemd's Dark Theme from Playground",
   "description": "A Visual Studio Code theme for effective work",
   "version": "0.6.0",
   "type": "module",
