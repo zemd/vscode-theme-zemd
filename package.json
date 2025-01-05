@@ -19,7 +19,7 @@
   "contributes": {
     "themes": [
       {
-        "label": "zemd Theme Dark",
+        "label": "zemd Dark Theme Playground",
         "uiTheme": "vs-dark",
         "path": "./themes/dark.json"
       }

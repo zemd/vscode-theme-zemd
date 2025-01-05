@@ -44,7 +44,7 @@ import editorconfigSyntax from "./languages/editorconfig.js";
 
 export const makeTheme = () => {
   return {
-    name: "zemd Dark",
+    name: "zemd Dark Theme Playground",
     type: "dark",
     semanticHighlighting: true,
     semanticTokenColors: {
