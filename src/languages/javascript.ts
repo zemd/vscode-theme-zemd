@@ -93,7 +93,12 @@ export default [
 
   // ts, tsx specific
   scope(
-    ["keyword.operator.expression.keyof", "storage.type.enum", "keyword.operator.expression.is"],
+    [
+      "keyword.operator.expression.keyof",
+      "storage.type.enum",
+      "keyword.operator.expression.is",
+      "keyword.control.satisfies",
+    ],
     tokens.syntax.keyword.fg,
     undefined,
     ["ts", "tsx"],
@@ -127,10 +132,13 @@ export default [
   ),
   scopeOrig("variable.other.jsdoc", tokens.syntax.variable.fg),
 
-  scopeOrig(["entity.name.type.ts", "entity.other.inherited-class.ts"], tokens.syntax.enum.fg),
-  scopeOrig(["entity.name.type.alias.ts"], tokens.syntax.class.fg, "italic"),
-  scopeOrig(["keyword.operator.expression.infer.ts"], tokens.syntax.namespace.fg),
-  scopeOrig(["variable.other.constant.object.ts"], tokens.syntax.variable.fg),
-  // scopeOrig(["variable.other.readwrite.ts"], tokens.syntax.variable.fg, "bold"),
-  scopeOrig(["variable.other.object.ts"], tokens.syntax.function.fg),
+  scope(["keyword.operator.type"], tokens.syntax.operator.fg),
+  scope(["entity.name.type", "entity.other.inherited-class"], tokens.syntax.enum.fg),
+  scope(["entity.name.type.alias"], tokens.syntax.class.fg, "italic"),
+  scope(["keyword.operator.expression.infer"], tokens.syntax.namespace.fg),
+  scope(["variable.other.constant.object"], tokens.syntax.variable.fg),
+  scope(["entity.name.type.interface", "entity.other.inherited-class"], tokens.syntax.interface.fg, "italic"),
+  scope(["variable.other.object", "variable.other.readwrite.alias"], tokens.syntax.variable.fg),
+  scope(["variable.other.readwrite"], "", "italic"),
+  scope(["variable.other.constant.object"], "", "normal"),
 ];

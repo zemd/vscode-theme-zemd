@@ -40,6 +40,7 @@ import vcsSyntax from "./languages/vcs.js";
 import xmlSyntax from "./languages/xml.js";
 import yamlSyntax from "./languages/yaml.js";
 import zigSyntax from "./languages/zig.js";
+import editorconfigSyntax from "./languages/editorconfig.js";
 
 export const makeTheme = () => {
   return {
@@ -51,7 +52,7 @@ export const makeTheme = () => {
       // class: semantic(tokens.syntax.class.fg),
       // "class.defaultLibrary": semantic(tokens.syntax.variable.fg),
       enum: semantic(tokens.syntax.enum.fg),
-      interface: semantic(tokens.syntax.interface.fg),
+      // interface: semantic(tokens.syntax.interface.fg),
       "interface.defaultLibrary": semantic(tokens.syntax.variable.fg),
       struct: semantic(tokens.syntax.struct.fg),
       "struct.declaration": semantic(tokens.syntax.class.fg),
@@ -103,6 +104,7 @@ export const makeTheme = () => {
       ...xmlSyntax,
       ...yamlSyntax,
       ...zigSyntax,
+      ...editorconfigSyntax,
     ],
     colors: {
       ...uiBaseColors,
