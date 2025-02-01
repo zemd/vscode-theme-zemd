@@ -47,6 +47,8 @@
     "vscode:prepublish": "bun run build",
     "package": "rm -rf ./build && mkdir ./build && vsce package -o ./build/zemd-vscode-theme.vsix",
     "publish": "vsce publish minor",
+    "publish:major": "vsce publish major",
+    "publish:patch": "vsce publish patch",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky",
     "lint": "eslint ."
