@@ -1,7 +1,6 @@
-import tokens from "../generated/tokens.json" assert { type: "json" };
 import { scope } from "../utils.js";
 
-export default [
+export default (tokens: Record<string, any>) => [
   scope("meta.diff.header.git", tokens.syntax.keyword.fg),
   scope("meta.diff.index.git", tokens.syntax.variable.fg),
   // scope(["meta.diff.header.from-file", "meta.diff.header.to-file"], "#73c991"),

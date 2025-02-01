@@ -1,7 +1,6 @@
-import tokens from "../generated/tokens.json" assert { type: "json" };
 import { scope } from "../utils.js";
 
-export default [
+export default (tokens: Record<string, any>) => [
   scope(["entity.name.section.markdown", "entity.name.section.mdx"], tokens.syntax.property.fg, "italic"),
   scope("punctuation.definition.heading.markdown", "", "italic"),
   scope("invalid.deprecated.entity.other.attribute-name.html", tokens.syntax.parameter.fg, "italic"),

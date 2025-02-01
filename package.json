@@ -1,6 +1,6 @@
 {
   "name": "zemd-theme-dark",
-  "displayName": "zemd Theme Dark",
+  "displayName": "Onyx Dark Themes",
   "description": "A Visual Studio Code theme for effective work",
   "version": "0.6.0",
   "type": "module",
@@ -19,14 +19,19 @@
   "contributes": {
     "themes": [
       {
-        "label": "zemd Theme Dark",
+        "label": "Onyx Core",
         "uiTheme": "vs-dark",
-        "path": "./themes/dark.json"
+        "path": "./themes/onyx-core.json"
+      },
+      {
+        "label": "Onyx Ghost",
+        "uiTheme": "vs-dark",
+        "path": "./themes/onyx-ghost.json"
       }
     ]
   },
   "scripts": {
-    "dev": "nodemon",
+    "dev": "nodemon -e ts,json",
     "build": "bun src/index.ts",
     "vscode:prepublish": "bun run build",
     "package": "rm -rf ./build && mkdir ./build && vsce package -o ./build/zemd-vscode-theme.vsix",
@@ -37,9 +42,9 @@
   "author": "Dmytro Zelenetskyi <dmytro.zelenetskyi@gmail.com>",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@types/chroma-js": "^3.1.0",
-    "@types/node": "^22.10.10",
-    "@vscode/vsce": "^3.2.1",
+    "@types/chroma-js": "^3.1.1",
+    "@types/node": "^22.13.0",
+    "@vscode/vsce": "^3.2.2",
     "@zemd/tsconfig": "^1.3.0",
     "chroma-js": "^3.1.2",
     "husky": "^9.1.7",

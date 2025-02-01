@@ -1,7 +1,6 @@
-import tokens from "../generated/tokens.json" assert { type: "json" };
 import { scope } from "../utils.js";
 
-export default [
+export default (tokens: Record<string, any>) => [
   scope(
     [
       "entity.other.attribute-name.class.css",
@@ -73,6 +72,7 @@ export default [
       "punctuation.section.keyframes.end.scss",
       "punctuation.section.layer.begin.bracket.curly",
       "punctuation.section.layer.end.bracket.curly",
+      "punctuation.terminator.tailwind.tailwind",
     ],
     tokens.syntax.punctuation.fg,
   ),

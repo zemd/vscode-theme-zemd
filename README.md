@@ -1,6 +1,6 @@
-# zemd's VS Code dark theme
+# Onyx set of dark themes for VS Code
 
-![zemd VS Code dark theme](https://codeandgin.co/vscode/screenshot.v0.1.png)
+![Onyx themes](https://codeandgin.co/vscode/screenshot.v0.1.png)
 
 ## Install
 
@@ -14,7 +14,7 @@ To override this (or any other) theme in your personal config file, please follo
 
 ## License
 
-`zemd-dark-theme` released under the Apache 2.0 license
+`Onyx themes` released under the Apache 2.0 license
 
 ## Donate
 

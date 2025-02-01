@@ -1,7 +1,6 @@
-const tokens = require("../generated/tokens.json");
-const chroma = require("chroma-js");
+//const chroma = require("chroma-js");
 
-export default {
+export default (tokens: Record<string, any>) => ({
   "terminal.foreground": "#c4c8c6",
   "terminal.selectionBackground": "#6f734340",
   "terminalCursor.background": "#0087FF",
@@ -23,4 +22,4 @@ export default {
   "terminal.ansiRed": "#d35656",
   "terminal.ansiWhite": "#c4c8c6",
   "terminal.ansiYellow": "#f8c465",
-};
+});

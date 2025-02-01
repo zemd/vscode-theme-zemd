@@ -1,6 +1,4 @@
-import tokens from "../generated/tokens.json" assert { type: "json" };
-
-export default {
+export default (tokens: Record<string, any>) => ({
   "editorGroupHeader.tabsBackground": tokens.widget.bg,
 
   "tab.activeForeground": tokens.widget.active.fg,
@@ -17,4 +15,4 @@ export default {
   "breadcrumb.background": tokens.panel.dimmed.bg,
   "breadcrumb.foreground": tokens.panel.dimmed.fg,
   "breadcrumb.focusForeground": tokens.panel.dimmed.activeFg,
-};
+});

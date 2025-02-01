@@ -1,7 +1,6 @@
-import tokens from "../generated/tokens.json" assert { type: "json" };
 import { scope } from "../utils.js";
 
-export default [
+export default (tokens: Record<string, any>) => [
   scope(["support.type.property-name.json.comments", "support.type.property-name.json"], tokens.syntax.property.fg),
   scope(
     [

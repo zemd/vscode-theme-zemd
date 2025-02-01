@@ -1,5 +1,4 @@
 import { semantic } from "./utils.js";
-import tokens from "./generated/tokens.json" assert { type: "json" };
 // ui
 import uiBaseColors from "./ui/base.js";
 import uiEditorColors from "./ui/editor.js";
@@ -40,27 +39,33 @@ import vcsSyntax from "./languages/vcs.js";
 import xmlSyntax from "./languages/xml.js";
 import yamlSyntax from "./languages/yaml.js";
 import zigSyntax from "./languages/zig.js";
+import editorconfigSyntax from "./languages/editorconfig.js";
 
-export const makeTheme = () => {
+type MakeThemeOptions = {
+  name: string;
+  tokens: Record<string, any>;
+};
+
+export const makeTheme = ({ name, tokens }: MakeThemeOptions) => {
   return {
-    name: "zemd Dark",
+    name,
     type: "dark",
     semanticHighlighting: true,
     semanticTokenColors: {
       // namespace: semantic(tokens.syntax.namespace.fg),
-      class: semantic(tokens.syntax.class.fg),
-      "class.defaultLibrary": semantic(tokens.syntax.variable.fg),
+      // class: semantic(tokens.syntax.class.fg),
+      // "class.defaultLibrary": semantic(tokens.syntax.variable.fg),
       enum: semantic(tokens.syntax.enum.fg),
-      interface: semantic(tokens.syntax.interface.fg),
+      // interface: semantic(tokens.syntax.interface.fg),
       "interface.defaultLibrary": semantic(tokens.syntax.variable.fg),
       struct: semantic(tokens.syntax.struct.fg),
       "struct.declaration": semantic(tokens.syntax.class.fg),
       typeParameter: semantic(tokens.syntax.typeParameter.fg),
       // "typeParameter.declaration": semantic(tokens.syntax.typeParameter.fg), // TODO:
-      type: semantic(tokens.syntax.type.fg),
+      // type: semantic(tokens.syntax.type.fg),
       "hcl-blockType": semantic(tokens.syntax.keyword.fg),
       parameter: semantic(tokens.syntax.parameter.fg, "italic"),
-      variable: semantic(tokens.syntax.variable.fg),
+      // variable: semantic(tokens.syntax.variable.fg),
       "hcl-blockLabel": semantic(tokens.syntax.function.fg, "bold"),
       property: semantic(tokens.syntax.property.fg),
       enumMember: semantic(tokens.syntax.enumMember.fg),
@@ -78,46 +83,47 @@ export const makeTheme = () => {
       operator: semantic(tokens.syntax.operator.fg),
     },
     tokenColors: [
-      ...coreSyntax,
-      ...clangSyntax,
-      ...jsSyntax,
-      ...cssSyntax,
-      ...goSyntax,
-      ...godotSyntax,
-      ...graphqlSyntax,
-      ...groovySyntax,
-      ...handlebarsSyntax,
-      ...htmlSyntax,
-      ...iniSyntax,
-      ...javaSyntax,
-      ...jsonSyntax,
-      ...markdownSyntax,
-      ...pythonSyntax,
-      ...rustSyntax,
-      ...shellSyntax,
-      ...sqlSyntax,
-      ...swiftSyntax,
-      ...tfSyntax,
-      ...tomlSyntax,
-      ...vcsSyntax,
-      ...xmlSyntax,
-      ...yamlSyntax,
-      ...zigSyntax,
+      ...coreSyntax(tokens),
+      ...clangSyntax(tokens),
+      ...jsSyntax(tokens),
+      ...cssSyntax(tokens),
+      ...goSyntax(tokens),
+      ...godotSyntax(tokens),
+      ...graphqlSyntax(tokens),
+      ...groovySyntax(tokens),
+      ...handlebarsSyntax(tokens),
+      ...htmlSyntax(tokens),
+      ...iniSyntax(tokens),
+      ...javaSyntax(tokens),
+      ...jsonSyntax(tokens),
+      ...markdownSyntax(tokens),
+      ...pythonSyntax(tokens),
+      ...rustSyntax(tokens),
+      ...shellSyntax(tokens),
+      ...sqlSyntax(tokens),
+      ...swiftSyntax(tokens),
+      ...tfSyntax(tokens),
+      ...tomlSyntax(tokens),
+      ...vcsSyntax(tokens),
+      ...xmlSyntax(tokens),
+      ...yamlSyntax(tokens),
+      ...zigSyntax(tokens),
+      ...editorconfigSyntax(tokens),
     ],
     colors: {
-      ...uiBaseColors,
-      ...uiEditorColors,
-      ...uiPeekViewColors,
-      ...uiEditorGutterWithLineNumbersColors,
-      ...uiTabsColors,
-      ...uiSideBarColors,
-      ...uiActivityBarColors,
-      ...uiTitleBarColors,
-      ...uiStatusBarColors,
-      ...uiTerminalColors,
-      ...uiVcsColors,
-      ...uiNotificationsColors,
-      ...uiWidgetsColors,
+      ...uiBaseColors(tokens),
+      ...uiEditorColors(tokens),
+      ...uiPeekViewColors(tokens),
+      ...uiEditorGutterWithLineNumbersColors(tokens),
+      ...uiTabsColors(tokens),
+      ...uiSideBarColors(tokens),
+      ...uiActivityBarColors(tokens),
+      ...uiTitleBarColors(tokens),
+      ...uiStatusBarColors(tokens),
+      ...uiTerminalColors(tokens),
+      ...uiVcsColors(tokens),
+      ...uiNotificationsColors(tokens),
+      ...uiWidgetsColors(tokens),
     },
   };
 };

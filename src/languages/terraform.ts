@@ -1,7 +1,6 @@
 import { scope } from "./../utils.js";
-import tokens from "../generated/tokens.json" assert { type: "json" };
 
-export default [
+export default (tokens: Record<string, any>) => [
   scope("variable.other.readwrite.terraform", tokens.syntax.variable.fg),
   scope("variable.other.member.hcl", tokens.syntax.property.fg),
   scope("keyword.operator.assignment.hcl", tokens.syntax.operator.fg),

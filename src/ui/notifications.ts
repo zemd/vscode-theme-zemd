@@ -1,6 +1,4 @@
-import tokens from "../generated/tokens.json" assert { type: "json" };
-
-export default {
+export default (tokens: Record<string, any>) => ({
   "notifications.foreground": tokens.color.gray[220],
   "notifications.background": tokens.color.gray[900],
   "notificationToast.border": tokens.color.gray[600],
@@ -11,4 +9,4 @@ export default {
   "notificationCenterHeader.foreground": tokens.color.gray[500],
   "notificationCenterHeader.background": tokens.color.gray[1200],
   "notifications.border": tokens.color.blue[1200],
-};
+});

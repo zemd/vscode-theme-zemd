@@ -1,7 +1,6 @@
-import tokens from "../generated/tokens.json" assert { type: "json" };
 import { scope } from "../utils.js";
 
-export default [
+export default (tokens: Record<string, any>) => [
   scope(["keyword.control.import.python", "variable.language.special.self.python"], tokens.syntax.keyword.fg, "bold"),
   scope(
     ["meta.function-call.generic.python", "support.function.builtin.python", "support.function.magic.python"],

@@ -1,4 +1,3 @@
-import tokens from "../generated/tokens.json" assert { type: "json" };
 import { scope as scopeOrig, type TFontStyle } from "../utils.js";
 
 const decorateScope = (scp: string, modifiers = ["ts", "tsx", "js", "jsx"]): string[] => {
@@ -13,7 +12,7 @@ const scope = (initialScope: string | string[], foreground: string, style?: TFon
   return scopeOrig(scp, foreground, style);
 };
 
-export default [
+export default (tokens: Record<string, any>) => [
   scope(
     [
       "keyword.control.export",
@@ -93,7 +92,12 @@ export default [
 
   // ts, tsx specific
   scope(
-    ["keyword.operator.expression.keyof", "storage.type.enum", "keyword.operator.expression.is"],
+    [
+      "keyword.operator.expression.keyof",
+      "storage.type.enum",
+      "keyword.operator.expression.is",
+      "keyword.control.satisfies",
+    ],
     tokens.syntax.keyword.fg,
     undefined,
     ["ts", "tsx"],
@@ -118,8 +122,22 @@ export default [
   scopeOrig(["punctuation.definition.block.tag.jsdoc", "storage.type.class.jsdoc"], tokens.syntax.keyword.fg),
   scopeOrig("entity.name.type.instance.jsdoc", tokens.syntax.parameter.fg, "italic"),
   scopeOrig(
-    ["punctuation.definition.bracket.curly.begin.jsdoc", "punctuation.definition.bracket.curly.end.jsdoc"],
+    [
+      "punctuation.definition.bracket.curly.begin.jsdoc",
+      "punctuation.definition.bracket.curly.end.jsdoc",
+      "punctuation.accessor.ts",
+    ],
     tokens.syntax.punctuation.fg,
   ),
   scopeOrig("variable.other.jsdoc", tokens.syntax.variable.fg),
+
+  scope(["keyword.operator.type"], tokens.syntax.operator.fg),
+  scope(["entity.name.type", "entity.other.inherited-class"], tokens.syntax.enum.fg),
+  scope(["entity.name.type.alias"], tokens.syntax.class.fg, "italic"),
+  scope(["keyword.operator.expression.infer"], tokens.syntax.namespace.fg),
+  scope(["variable.other.constant.object"], tokens.syntax.variable.fg),
+  scope(["entity.name.type.interface", "entity.other.inherited-class"], tokens.syntax.interface.fg, "italic"),
+  scope(["variable.other.object", "variable.other.readwrite.alias"], tokens.syntax.variable.fg),
+  scope(["variable.other.readwrite"], "", "italic"),
+  scope(["variable.other.constant.object"], "", "normal"),
 ];

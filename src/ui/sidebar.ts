@@ -1,7 +1,6 @@
-import tokens from "../generated/tokens.json" assert { type: "json" };
 import chroma from "chroma-js";
 
-export default {
+export default (tokens: Record<string, any>) => ({
   "sideBar.background": tokens.panel.sidebar.bg,
   "sideBar.foreground": tokens.panel.sidebar.fg,
 
@@ -15,4 +14,4 @@ export default {
   "list.inactiveSelectionBackground": chroma(tokens.panel.highlight.bg).alpha(0.8).hex(),
   "list.focusOutline": "#00000000",
   "list.focusBackground": tokens.panel.selection.bg, // color when you hover over the tree item
-};
+});
