@@ -1,6 +1,12 @@
 # Onyx set of dark themes for VS Code
 
-![Onyx themes](https://codeandgin.co/vscode/screenshot.v0.1.png)
+![Onyx Core](./assets/onyx-core.png)
+![Onyx Ghost](./assets/onyx-ghost.png)
+
+- Font: [MonoLisa](https://www.monolisa.dev/)
+- File Icon Theme: [Helium Icon Theme](https://marketplace.visualstudio.com/items?itemName=helgardrichard.helium-icon-theme)
+- Product Icon Theme: [Fluent Icons](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.fluent-icons)
+- Theme: [Onyx](https://github.com/zemd/vscode-theme-zemd)
 
 ## Install
 
