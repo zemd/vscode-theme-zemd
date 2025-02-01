@@ -1,4 +1,3 @@
-import tokens from "../generated/tokens.json" assert { type: "json" };
 import { scope as scopeOrig, type TFontStyle } from "../utils.js";
 
 const decorateScope = (scp: string, modifiers = ["ts", "tsx", "js", "jsx"]): string[] => {
@@ -13,7 +12,7 @@ const scope = (initialScope: string | string[], foreground: string, style?: TFon
   return scopeOrig(scp, foreground, style);
 };
 
-export default [
+export default (tokens: Record<string, any>) => [
   scope(
     [
       "keyword.control.export",

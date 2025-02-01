@@ -1,7 +1,6 @@
-import tokens from "../generated/tokens.json" assert { type: "json" };
-import chroma from "chroma-js";
+// import chroma from "chroma-js";
 
-const gitDecorationColors = {
+const gitDecorationColors = (tokens: Record<string, any>) => ({
   "gitDecoration.addedResourceForeground": "#0ec72f",
   "gitDecoration.conflictingResourceForeground": "#ff6000",
   "gitDecoration.deletedResourceForeground": "#c73939",
@@ -11,25 +10,25 @@ const gitDecorationColors = {
   "gitDecoration.stageModifiedResourceForeground": "#e2c08d",
   "gitDecoration.submoduleResourceForeground": "#8db9e2",
   "gitDecoration.untrackedResourceForeground": "#73c991",
-};
+});
 
-const diffEditorColors = {
+const diffEditorColors = (tokens: Record<string, any>) => ({
   "diffEditor.insertedTextBackground": "#0a6f0b34",
   "diffEditor.removedTextBackground": "#a7020233",
   "diffEditor.border": "#444444",
-};
+});
 
-const mergeColors = {
+const mergeColors = (tokens: Record<string, any>) => ({
   "merge.currentHeaderBackground": "#367366",
   "merge.currentContentBackground": "#27403B",
   "merge.incomingHeaderBackground": "#395F8F",
   "merge.incomingContentBackground": "#28384B",
   "merge.commonHeaderBackground": "#383838",
   "merge.commonContentBackground": "#282828",
-};
+});
 
-export default {
-  ...gitDecorationColors,
-  ...diffEditorColors,
-  ...mergeColors,
-};
+export default (tokens: Record<string, any>) => ({
+  ...gitDecorationColors(tokens),
+  ...diffEditorColors(tokens),
+  ...mergeColors(tokens),
+});

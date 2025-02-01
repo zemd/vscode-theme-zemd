@@ -1,7 +1,6 @@
-import tokens from "../generated/tokens.json" assert { type: "json" };
 import chroma from "chroma-js";
 
-const editorSelectionOrHoverColors = {
+const editorSelectionOrHoverColors = (tokens: Record<string, any>) => ({
   "editor.selectionBackground": chroma(tokens.canvas.selection.bg).alpha(0.8).hex(),
   "editor.selectionHighlightBackground": "#00000000",
   "editor.wordHighlightBackground": "#00000000",
@@ -11,9 +10,9 @@ const editorSelectionOrHoverColors = {
   "editor.hoverHighlightBackground": chroma(tokens.canvas.highlight.bg).alpha(0.7).hex(),
   "editor.lineHighlightBackground": chroma(tokens.canvas.active.bg).alpha(0.8).hex(),
   "editorLink.activeForeground": tokens.canvas.active.fg,
-};
+});
 
-const editorErrorsAndWarningsColors = {
+const editorErrorsAndWarningsColors = (tokens: Record<string, any>) => ({
   "editorError.foreground": tokens.canvas.error.fg, // error squiggles
   "editorError.background": chroma(tokens.canvas.error.bg).alpha(0.25).hex(),
   "editorError.border": "#00000000",
@@ -25,12 +24,13 @@ const editorErrorsAndWarningsColors = {
   "editorInfo.foreground": tokens.canvas.info.fg,
   "editorInfo.background": chroma(tokens.canvas.info.bg).alpha(0.25).hex(),
   "editorInfo.border": "#00000000",
-};
+});
 
-export default {
-  "editor.background": tokens.canvas.bg,
-  "editor.foreground": tokens.canvas.fg,
+export default (tokens: Record<string, any>) =>
+  ({
+    "editor.background": tokens.canvas.bg,
+    "editor.foreground": tokens.canvas.fg,
 
-  ...editorSelectionOrHoverColors,
-  ...editorErrorsAndWarningsColors,
-} as const;
+    ...editorSelectionOrHoverColors(tokens),
+    ...editorErrorsAndWarningsColors(tokens),
+  }) as const;

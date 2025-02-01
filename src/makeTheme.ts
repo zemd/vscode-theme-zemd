@@ -1,5 +1,4 @@
 import { semantic } from "./utils.js";
-import tokens from "./generated/tokens.json" assert { type: "json" };
 // ui
 import uiBaseColors from "./ui/base.js";
 import uiEditorColors from "./ui/editor.js";
@@ -42,9 +41,14 @@ import yamlSyntax from "./languages/yaml.js";
 import zigSyntax from "./languages/zig.js";
 import editorconfigSyntax from "./languages/editorconfig.js";
 
-export const makeTheme = () => {
+type MakeThemeOptions = {
+  name: string;
+  tokens: Record<string, any>;
+};
+
+export const makeTheme = ({ name, tokens }: MakeThemeOptions) => {
   return {
-    name: "zemd Dark Theme Playground",
+    name,
     type: "dark",
     semanticHighlighting: true,
     semanticTokenColors: {
@@ -79,47 +83,47 @@ export const makeTheme = () => {
       operator: semantic(tokens.syntax.operator.fg),
     },
     tokenColors: [
-      ...coreSyntax,
-      ...clangSyntax,
-      ...jsSyntax,
-      ...cssSyntax,
-      ...goSyntax,
-      ...godotSyntax,
-      ...graphqlSyntax,
-      ...groovySyntax,
-      ...handlebarsSyntax,
-      ...htmlSyntax,
-      ...iniSyntax,
-      ...javaSyntax,
-      ...jsonSyntax,
-      ...markdownSyntax,
-      ...pythonSyntax,
-      ...rustSyntax,
-      ...shellSyntax,
-      ...sqlSyntax,
-      ...swiftSyntax,
-      ...tfSyntax,
-      ...tomlSyntax,
-      ...vcsSyntax,
-      ...xmlSyntax,
-      ...yamlSyntax,
-      ...zigSyntax,
-      ...editorconfigSyntax,
+      ...coreSyntax(tokens),
+      ...clangSyntax(tokens),
+      ...jsSyntax(tokens),
+      ...cssSyntax(tokens),
+      ...goSyntax(tokens),
+      ...godotSyntax(tokens),
+      ...graphqlSyntax(tokens),
+      ...groovySyntax(tokens),
+      ...handlebarsSyntax(tokens),
+      ...htmlSyntax(tokens),
+      ...iniSyntax(tokens),
+      ...javaSyntax(tokens),
+      ...jsonSyntax(tokens),
+      ...markdownSyntax(tokens),
+      ...pythonSyntax(tokens),
+      ...rustSyntax(tokens),
+      ...shellSyntax(tokens),
+      ...sqlSyntax(tokens),
+      ...swiftSyntax(tokens),
+      ...tfSyntax(tokens),
+      ...tomlSyntax(tokens),
+      ...vcsSyntax(tokens),
+      ...xmlSyntax(tokens),
+      ...yamlSyntax(tokens),
+      ...zigSyntax(tokens),
+      ...editorconfigSyntax(tokens),
     ],
     colors: {
-      ...uiBaseColors,
-      ...uiEditorColors,
-      ...uiPeekViewColors,
-      ...uiEditorGutterWithLineNumbersColors,
-      ...uiTabsColors,
-      ...uiSideBarColors,
-      ...uiActivityBarColors,
-      ...uiTitleBarColors,
-      ...uiStatusBarColors,
-      ...uiTerminalColors,
-      ...uiVcsColors,
-      ...uiNotificationsColors,
-      ...uiWidgetsColors,
+      ...uiBaseColors(tokens),
+      ...uiEditorColors(tokens),
+      ...uiPeekViewColors(tokens),
+      ...uiEditorGutterWithLineNumbersColors(tokens),
+      ...uiTabsColors(tokens),
+      ...uiSideBarColors(tokens),
+      ...uiActivityBarColors(tokens),
+      ...uiTitleBarColors(tokens),
+      ...uiStatusBarColors(tokens),
+      ...uiTerminalColors(tokens),
+      ...uiVcsColors(tokens),
+      ...uiNotificationsColors(tokens),
+      ...uiWidgetsColors(tokens),
     },
   };
 };

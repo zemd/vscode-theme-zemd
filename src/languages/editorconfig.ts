@@ -1,7 +1,6 @@
 import { scope } from "../utils.js";
-import tokens from "../generated/tokens.json" assert { type: "json" };
 
-export default [
+export default (tokens: Record<string, any>) => [
   scope(["meta.section.editorconfig"], tokens.syntax.string.fg),
   scope(["keyword.other.definition", "keyword.other.definition.root.editorconfig"], tokens.syntax.property.fg),
   scope(["constant.language.boolean"], tokens.syntax.keyword.fg),

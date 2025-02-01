@@ -1,7 +1,6 @@
-import tokens from "../generated/tokens.json" assert { type: "json" };
 import { scope } from "../utils.js";
 
-export default [
+export default (tokens: Record<string, any>) => [
   scope("support.type.property-name.toml", tokens.syntax.property.fg),
   scope("punctuation.eq.toml", tokens.syntax.operator.fg),
   scope(

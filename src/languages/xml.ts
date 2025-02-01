@@ -1,7 +1,6 @@
 import { scope } from "./../utils.js";
-import tokens from "../generated/tokens.json" assert { type: "json" };
 
-export default [
+export default (tokens: Record<string, any>) => [
   scope("entity.name.tag.localname.xml", tokens.syntax.function.fg),
   scope(
     ["entity.other.attribute-name.localname.xml", "entity.other.attribute-name.xml"],

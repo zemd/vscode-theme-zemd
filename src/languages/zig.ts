@@ -1,7 +1,6 @@
-import tokens from "../generated/tokens.json" assert { type: "json" };
 import { scope } from "../utils.js";
 
-export default [
+export default (tokens: Record<string, any>) => [
   scope("source.zig", tokens.syntax.fg),
   scope("keyword.type.zig", tokens.syntax.fg),
   scope("keyword.structure.zig", tokens.syntax.keyword.fg, "underline"),

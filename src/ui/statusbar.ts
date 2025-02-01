@@ -1,6 +1,4 @@
-import tokens from "../generated/tokens.json" assert { type: "json" };
-
-export default {
+export default (tokens: Record<string, any>) => ({
   "statusBar.foreground": tokens.panel.fg,
   "statusBar.background": tokens.panel.bg,
   "statusBarItem.hoverBackground": tokens.panel.secondary.bg,
@@ -10,4 +8,4 @@ export default {
   "statusBar.noFolderForeground": tokens.panel.special1.fg,
   "statusBarItem.remoteBackground": tokens.panel.special2.bg,
   "statusBarItem.remoteForeground": tokens.panel.special2.fg,
-};
+});

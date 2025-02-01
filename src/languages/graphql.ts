@@ -1,7 +1,6 @@
 import { scope } from "../utils.js";
-import tokens from "../generated/tokens.json" assert { type: "json" };
 
-export default [
+export default (tokens: Record<string, any>) => [
   scope(
     [
       "keyword.type.graphql",

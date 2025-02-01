@@ -1,7 +1,6 @@
-import tokens from "../generated/tokens.json" assert { type: "json" };
 import { scope } from "../utils.js";
 
-export default [
+export default (tokens: Record<string, any>) => [
   scope(["entity.name.tag.html"], tokens.syntax.function.fg),
   scope("entity.other.attribute-name.html", tokens.syntax.parameter.fg, "italic"),
   scope(

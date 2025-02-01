@@ -1,7 +1,6 @@
-import tokens from "../generated/tokens.json" assert { type: "json" };
 import { scope } from "../utils.js";
 
-export default [
+export default (tokens: Record<string, any>) => [
   scope(["keyword.package.go"], tokens.syntax.keyword.fg, "bold"),
   scope(
     [

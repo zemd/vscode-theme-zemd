@@ -1,7 +1,6 @@
-import tokens from "../generated/tokens.json" assert { type: "json" };
 import { scope } from "../utils.js";
 
-export default [
+export default (tokens: Record<string, any>) => [
   scope(["keyword.other.DML.sql", "keyword.other.data-integrity.sql"], tokens.syntax.keyword.fg),
   scope("keyword.operator.star.sql", tokens.syntax.operator.fg),
   scope(["keyword.other.sql", "keyword.other.alias.sql", "keyword.other.LUW.sql"], tokens.syntax.keyword.fg, "bold"),
