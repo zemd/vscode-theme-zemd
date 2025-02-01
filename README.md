@@ -1,4 +1,4 @@
-# Onyx set of dark themes for VS Code
+# Onyx dark themes for VS Code
 
 <details>
   <summary>🦊 Onyx Core</summary>
