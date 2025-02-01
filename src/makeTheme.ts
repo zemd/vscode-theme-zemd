@@ -28,6 +28,7 @@ import iniSyntax from "./languages/ini.js";
 import javaSyntax from "./languages/java.js";
 import jsonSyntax from "./languages/json.js";
 import markdownSyntax from "./languages/markdown.js";
+import phpSyntax from "./languages/php.js";
 import pythonSyntax from "./languages/python.js";
 import rustSyntax from "./languages/rust.js";
 import shellSyntax from "./languages/shell.js";
@@ -61,7 +62,7 @@ export const makeTheme = ({ name, tokens }: MakeThemeOptions) => {
       struct: semantic(tokens.syntax.struct.fg),
       "struct.declaration": semantic(tokens.syntax.class.fg),
       typeParameter: semantic(tokens.syntax.typeParameter.fg),
-      // "typeParameter.declaration": semantic(tokens.syntax.typeParameter.fg), // TODO:
+      // "typeParameter.declaration": semantic(tokens.syntax.typeParameter.fg),
       // type: semantic(tokens.syntax.type.fg),
       "hcl-blockType": semantic(tokens.syntax.keyword.fg),
       parameter: semantic(tokens.syntax.parameter.fg, "italic"),
@@ -97,6 +98,7 @@ export const makeTheme = ({ name, tokens }: MakeThemeOptions) => {
       ...javaSyntax(tokens),
       ...jsonSyntax(tokens),
       ...markdownSyntax(tokens),
+      ...phpSyntax(tokens),
       ...pythonSyntax(tokens),
       ...rustSyntax(tokens),
       ...shellSyntax(tokens),

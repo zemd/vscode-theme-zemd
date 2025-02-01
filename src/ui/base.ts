@@ -1,5 +1,5 @@
-export default (tokens: Record<string, any>) =>
-  ({
+export default (tokens: Record<string, any>) => {
+  return {
     // ↓ Overall border color for focused elements. This color is only used if not overridden by a component.
     // focusBorder: "",
     // ↓ Overall foreground color. This color is only used if not overridden by a component.
@@ -20,4 +20,5 @@ export default (tokens: Record<string, any>) =>
     // "icon.foreground": "",
     // ↓ The hover border color for draggable sashes.
     // "sash.hoverBorder": "",
-  }) as const;
+  } as const;
+};

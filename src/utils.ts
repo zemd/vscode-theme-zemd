@@ -1,9 +1,17 @@
 // type TForeground = `#${string}`; // TODO: align colors with this type
 
-const FONT_STYLES = ["bold", "italic", "underline", "normal"] as const;
+export const FONT_STYLES = ["bold", "italic", "underline", "normal"] as const;
 export type TFontStyle = (typeof FONT_STYLES)[number];
 
-export const scope = (scp: string | string[], foreground: string, fontStyle?: TFontStyle) => {
+type TScopeResult = {
+  scope: string | string[];
+  settings: {
+    foreground?: string;
+    fontStyle?: TFontStyle;
+  };
+};
+
+export const scope = (scp: string | string[], foreground: string, fontStyle?: TFontStyle): TScopeResult => {
   return {
     scope: scp,
     settings: {
@@ -13,7 +21,10 @@ export const scope = (scp: string | string[], foreground: string, fontStyle?: TF
   };
 };
 
-export const semantic = (foreground: string, fontStyle?: TFontStyle) => {
+export const semantic = (
+  foreground: string,
+  fontStyle?: TFontStyle,
+): { foreground: string; fontStyle?: TFontStyle } => {
   return {
     foreground,
     ...(fontStyle ? { fontStyle } : {}),

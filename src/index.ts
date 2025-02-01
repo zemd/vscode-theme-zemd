@@ -35,18 +35,21 @@ const configs = [
 ];
 
 async function buildDesignTokens() {
-  for await (const config of configs) {
-    const styleDictionary = new StyleDictionary(config);
-    await styleDictionary.buildAllPlatforms();
-  }
+  await Promise.all(
+    // eslint-disable-next-line @typescript-eslint/promise-function-async
+    configs.map((config) => {
+      const styleDictionary = new StyleDictionary(config);
+      return styleDictionary.buildAllPlatforms();
+    }),
+  );
 }
 
 async function main() {
   await fs.mkdir("./themes", { recursive: true });
   await buildDesignTokens();
   const { makeTheme } = await import("./makeTheme.js");
-  const onyxCoreTokens = await fs.readFile("./src/generated/onyx-core-tokens.json", "utf-8");
-  const onyxGhostTokens = await fs.readFile("./src/generated/onyx-ghost-tokens.json", "utf-8");
+  const onyxCoreTokens = await fs.readFile("./src/generated/onyx-core-tokens.json", "utf8");
+  const onyxGhostTokens = await fs.readFile("./src/generated/onyx-ghost-tokens.json", "utf8");
 
   await fs.writeFile(
     "./themes/onyx-core.json",
@@ -73,7 +76,7 @@ async function main() {
   );
 }
 
-main().catch((error) => {
+main().catch((error: unknown) => {
   console.error(error);
   process.exit(1);
 });

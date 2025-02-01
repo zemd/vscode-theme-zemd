@@ -1,3 +1,3 @@
-import tokens from "../generated/tokens.json" assert { type: "json" };
-
-export default [];
+export default (_tokens: Record<string, any>) => {
+  return [];
+};
