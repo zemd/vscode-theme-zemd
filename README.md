@@ -39,5 +39,4 @@ To override this (or any other) theme in your personal config file, please follo
 
 ## Donate
 
-[![](https://img.shields.io/badge/patreon-donate-yellow.svg)](https://www.patreon.com/red_rabbit)
 [![](https://img.shields.io/static/v1?label=UNITED24&message=support%20Ukraine&color=blue)](https://u24.gov.ua/)

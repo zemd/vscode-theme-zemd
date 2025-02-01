@@ -14,7 +14,8 @@
   "keywords": [
     "theme",
     "zemd",
-    "dark"
+    "dark",
+    "onyx"
   ],
   "contributes": {
     "themes": [
@@ -30,6 +31,16 @@
       }
     ]
   },
+  "exports": {
+    "./*": "./*"
+  },
+  "icon": "icon.png",
+  "files": [
+    "LICENSE",
+    "icon.png",
+    "themes/*",
+    "assets/*.png"
+  ],
   "scripts": {
     "dev": "nodemon -e ts,json",
     "build": "bun src/index.ts",
