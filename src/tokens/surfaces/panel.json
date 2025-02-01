@@ -1,5 +1,6 @@
 {
   "panel": {
+    "$type": "color",
     "fg": { "$value": "{palette.gray.1900}" },
     "bg": { "$value": "{palette.gray.400}" },
     "header": {

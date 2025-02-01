@@ -1,5 +1,6 @@
 {
   "popup": {
+    "$type": "color",
     "fg": { "$value": "{panel.fg}" },
     "bg": { "$value": "{panel.bg}" }
   }

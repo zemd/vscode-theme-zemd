@@ -1,5 +1,6 @@
 {
   "canvas": {
+    "$type": "color",
     "fg": { "$value": "{root.fg}" },
     "bg": { "$value": "{root.bg}" },
     "selection": {

@@ -1,7 +1,7 @@
 {
   "syntax": {
+    "$type": "color",
     "fg": { "$value": "{palette.gray.2300}" },
-
     "class": {
       "fg": { "$value": "{palette.gray.2300}" }
     },

@@ -1,5 +1,6 @@
 {
   "overlay": {
+    "$type": "color",
     "fg": { "$value": "{popup.fg}" },
     "bg": { "$value": "{popup.bg}" }
   }

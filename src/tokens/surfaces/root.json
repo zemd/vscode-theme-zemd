@@ -1,5 +1,6 @@
 {
   "root": {
+    "$type": "color",
     "fg": { "$value": "{palette.gray.2300}" },
     "bg": { "$value": "{palette.gray.500}" },
     "error": {

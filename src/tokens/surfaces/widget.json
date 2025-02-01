@@ -1,5 +1,6 @@
 {
   "widget": {
+    "$type": "color",
     "fg": { "$value": "{panel.secondary.fg}" },
     "bg": { "$value": "{panel.secondary.bg}" },
     "border": { "$value": "{palette.orange.100}" },
