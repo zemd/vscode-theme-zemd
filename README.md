@@ -1,5 +1,9 @@
 # Onyx dark themes for VS Code
 
+<p align="center">
+<a href="https://marketplace.visualstudio.com/items?itemName=zemd.zemd-theme-dark" target="__blank"><img src="https://img.shields.io/visual-studio-marketplace/v/zemd.zemd-theme-dark.svg?color=0000ff&amp;label=Marketplace&logo=visual-studio-code" alt="Visual Studio Marketplace Version" /></a>
+</p>
+
 <details>
   <summary>🦊 Onyx Core</summary>
 
