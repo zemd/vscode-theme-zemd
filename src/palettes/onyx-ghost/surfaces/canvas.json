@@ -1,0 +1,34 @@
+{
+  "canvas": {
+    "$type": "color",
+    "fg": { "$value": "{root.fg}" },
+    "bg": { "$value": "{root.bg}" },
+    "selection": {
+      "bg": { "$value": "{palette.blue.1000}" }
+    },
+    "highlight": {
+      "border": { "$value": "{palette.yellow.1500}" },
+      "bg": { "$value": "{palette.blue.400}" }
+    },
+    "active": {
+      "bg": { "$value": "{palette.grayblue.800}" },
+      "fg": { "$value": "{palette.yellow.2700}" }
+    },
+    "error": {
+      "fg": { "$value": "{root.error.fg}" },
+      "bg": { "$value": "{root.error.bg}" }
+    },
+    "warning": {
+      "fg": { "$value": "{root.warning.fg}" },
+      "bg": { "$value": "{root.warning.bg}" }
+    },
+    "info": {
+      "fg": { "$value": "{root.info.fg}" },
+      "bg": { "$value": "{root.info.bg}" }
+    },
+    "debug": {
+      "fg": { "$value": "{root.debug.fg}" },
+      "bg": { "$value": "{root.debug.bg}" }
+    }
+  }
+}

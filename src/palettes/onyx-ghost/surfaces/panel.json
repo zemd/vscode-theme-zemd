@@ -1,0 +1,51 @@
+{
+  "panel": {
+    "$type": "color",
+    "fg": { "$value": "{palette.gray.1900}" },
+    "bg": { "$value": "{palette.gray.400}" },
+    "header": {
+      "fg": { "$value": "{palette.gray.1200}" }
+    },
+    "sidebar": {
+      "bg": { "$value": "{palette.gray.700}" },
+      "fg": { "$value": "{palette.gray.2200}" },
+      "border": { "$value": "{canvas.bg}" }
+    },
+    "secondary": {
+      "fg": { "$value": "{palette.gray.2100}" },
+      "bg": { "$value": "{palette.gray.800}" },
+      "border": { "$value": "{canvas.bg}" }
+    },
+    "tertiary": {
+      "fg": { "$value": "{palette.gray.1300}" },
+      "bg": { "$value": "{palette.gray.600}" }
+    },
+    "selection": {
+      "bg": { "$value": "{palette.blue.200}" }
+    },
+    "highlight": {
+      "bg": { "$value": "{palette.gray.300}" }
+    },
+    "dimmed": {
+      "bg": { "$value": "{canvas.bg}" },
+      "fg": { "$value": "{palette.gray.1500}" },
+      "activeFg": { "$value": "{palette.gray.2600}" }
+    },
+    "active": {
+      "fg": { "$value": "{palette.gray.2700}" },
+      "bg": { "$value": "#3f90f9" }
+    },
+    "debug": {
+      "fg": { "$value": "{canvas.debug.fg}" },
+      "bg": { "$value": "{canvas.debug.bg}" }
+    },
+    "special1": {
+      "fg": { "$value": "#fff" },
+      "bg": { "$value": "{palette.purple.800}" }
+    },
+    "special2": {
+      "fg": { "$value": "#fff" },
+      "bg": { "$value": "{palette.green.800}" }
+    }
+  }
+}

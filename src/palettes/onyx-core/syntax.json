@@ -88,6 +88,9 @@
     },
     "dimmed": {
       "fg": { "$value": "{palette.gray.1800}" }
+    },
+    "other": {
+      "fg": { "$value": "{palette.yellow.2300}" }
     }
   }
 }

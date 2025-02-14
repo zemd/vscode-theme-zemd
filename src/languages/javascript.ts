@@ -71,10 +71,19 @@ export default (tokens: Record<string, any>) => {
     ),
 
     scope("keyword.operator.logical", tokens.syntax.fg),
-    scope(["keyword.operator.assignment"], tokens.syntax.operator.fg),
     scope(
       [
-        "variable.other.object",
+        "keyword.operator.assignment",
+        "keyword.operator.assignment.compound",
+        "keyword.operator.relational",
+        "keyword.operator.optional",
+        "keyword.operator.ternary",
+      ],
+      tokens.syntax.operator.fg,
+    ),
+    scope(
+      [
+        // "variable.other.object",
         "variable.other.constant.property",
         "support.variable.property.importmeta",
         "entity.name.type.module",
@@ -127,7 +136,7 @@ export default (tokens: Record<string, any>) => {
 
     // JSDOC
     scopeOrig(["punctuation.definition.block.tag.jsdoc", "storage.type.class.jsdoc"], tokens.syntax.keyword.fg),
-    scopeOrig("entity.name.type.instance.jsdoc", tokens.syntax.parameter.fg, "italic"),
+    scopeOrig("entity.name.type.instance.jsdoc", tokens.syntax.dimmed.fg, "italic"),
     scopeOrig(
       [
         "punctuation.definition.bracket.curly.begin.jsdoc",
@@ -136,16 +145,17 @@ export default (tokens: Record<string, any>) => {
       ],
       tokens.syntax.punctuation.fg,
     ),
-    scopeOrig("variable.other.jsdoc", tokens.syntax.variable.fg),
+    scopeOrig("variable.other.jsdoc", tokens.syntax.dimmed.fg),
 
     scope(["keyword.operator.type"], tokens.syntax.operator.fg),
-    scope(["entity.name.type", "entity.other.inherited-class"], tokens.syntax.enum.fg),
-    scope(["entity.name.type.alias"], tokens.syntax.class.fg, "italic"),
+    scope(["entity.name.type"], tokens.syntax.enum.fg),
+    scope(["entity.name.type.alias"], tokens.syntax.interface.fg, "italic"),
     scope(["keyword.operator.expression.infer"], tokens.syntax.namespace.fg),
-    scope(["variable.other.constant.object"], tokens.syntax.variable.fg),
-    scope(["entity.name.type.interface", "entity.other.inherited-class"], tokens.syntax.interface.fg, "italic"),
-    scope(["variable.other.object", "variable.other.readwrite.alias"], tokens.syntax.variable.fg),
-    scope(["variable.other.readwrite"], "", "italic"),
-    scope(["variable.other.constant.object"], "", "normal"),
+    scope(["entity.name.type.interface"], tokens.syntax.interface.fg, "italic"),
+    scope(["entity.other.inherited-class"], tokens.syntax.function.fg),
+    scope(["variable.other.constant", "variable.other.constant.object"], tokens.syntax.variable.fg),
+    // scope(["variable.other.readwrite"], "", "italic"),
+    scope(["constant.language.import-export-all"], tokens.syntax.punctuation.fg),
+    scope(["keyword.operator.spread", "keyword.operator.rest"], tokens.syntax.punctuation.fg),
   ];
 };

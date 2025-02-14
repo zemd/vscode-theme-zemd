@@ -45,7 +45,12 @@ async function buildDesignTokens() {
 }
 
 async function main() {
-  await fs.mkdir("./themes", { recursive: true });
+  try {
+    await fs.mkdir("./themes", { recursive: true });
+  } catch {
+    // ignore
+  }
+
   await buildDesignTokens();
   const { makeTheme } = await import("./makeTheme.js");
   const onyxCoreTokens = await fs.readFile("./src/generated/onyx-core-tokens.json", "utf8");
