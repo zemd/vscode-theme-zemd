@@ -66,7 +66,7 @@
     "husky": "^9.1.7",
     "nodemon": "^3.1.9",
     "prettier": "^3.5.0",
-    "style-dictionary": "^4.3.2"
+    "style-dictionary": "^4.3.3"
   },
   "repository": {
     "type": "git",
