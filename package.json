@@ -58,8 +58,8 @@
   "devDependencies": {
     "@types/chroma-js": "^3.1.1",
     "@types/node": "^22.13.10",
-    "@vscode/vsce": "^3.2.2",
-    "@zemd/eslint-ts": "^1.0.9",
+    "@vscode/vsce": "^3.3.0",
+    "@zemd/eslint-ts": "^1.0.11",
     "@zemd/tsconfig": "^1.4.0",
     "chroma-js": "^3.1.2",
     "eslint": "^9.22.0",
