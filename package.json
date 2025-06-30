@@ -57,15 +57,15 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "@types/chroma-js": "^3.1.1",
-    "@types/node": "^24.0.3",
-    "@vscode/vsce": "^3.5.0",
-    "@zemd/eslint-ts": "^1.0.26",
+    "@types/node": "^24.0.7",
+    "@vscode/vsce": "^3.6.0",
+    "@zemd/eslint-ts": "^1.0.27",
     "@zemd/tsconfig": "^1.5.0",
     "chroma-js": "^3.1.2",
-    "eslint": "^9.29.0",
+    "eslint": "^9.30.0",
     "husky": "^9.1.7",
     "nodemon": "^3.1.10",
-    "prettier": "^3.6.0",
+    "prettier": "^3.6.2",
     "style-dictionary": "^5.0.0"
   },
   "repository": {
