@@ -11,19 +11,21 @@ export default (tokens: Record<string, any>) => {
         "meta.flow-mapping.yaml",
         "string.other.begin.yaml",
         "string.other.end.yaml",
+        "meta.embedded.block.github-actions-expression",
+        "keyword.control.flow.block-scalar.literal.yaml",
       ],
       tokens.syntax.punctuation.fg,
     ),
     scope(["variable.other.read.github-actions-expression", "entity.name.tag.yaml"], tokens.syntax.variable.fg),
     scope(
       [
-        "meta.embedded.block.github-actions-expression",
         "constant.language.boolean.yaml",
         "punctuation.definition.mapping.begin.yaml",
         "punctuation.definition.mapping.end.yaml",
       ],
       tokens.syntax.keyword.fg,
     ),
+    scope(["entity.name.tag.yaml", "source.github-actions-workflow"], tokens.syntax.property.fg),
     scope(
       [
         "string.unquoted.plain.out.yaml",
@@ -33,6 +35,7 @@ export default (tokens: Record<string, any>) => {
         "string.quoted.double.yaml",
         "punctuation.definition.string.begin.yaml",
         "punctuation.definition.string.end.yaml",
+        "string.unquoted.block.yaml",
       ],
       tokens.syntax.string.fg,
     ),
