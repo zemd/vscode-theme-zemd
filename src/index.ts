@@ -52,7 +52,7 @@ async function main() {
   }
 
   await buildDesignTokens();
-  const { makeTheme } = await import("./makeTheme.js");
+  const { makeTheme } = await import("./makeTheme.ts");
   const onyxCoreTokens = await fs.readFile("./src/generated/onyx-core-tokens.json", "utf8");
   const onyxGhostTokens = await fs.readFile("./src/generated/onyx-ghost-tokens.json", "utf8");
 

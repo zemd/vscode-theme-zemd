@@ -1,4 +1,4 @@
-import { scope as scopeOrig, type TFontStyle } from "../utils.js";
+import { scope as scopeOrig, type TFontStyle } from "../utils.ts";
 
 const decorateScope = (scp: string, modifiers = ["ts", "tsx", "js", "jsx"]): string[] => {
   return modifiers.map((m) => {

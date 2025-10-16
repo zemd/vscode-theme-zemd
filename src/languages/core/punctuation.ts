@@ -1,4 +1,4 @@
-import { scope } from "../../utils.js";
+import { scope } from "../../utils.ts";
 
 export default (tokens: Record<string, any>) => {
   return [

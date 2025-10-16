@@ -1,5 +1,3 @@
-//const chroma = require("chroma-js");
-
 export default (_tokens: Record<string, any>) => {
   return {
     "terminal.foreground": "#c4c8c6",

@@ -23,7 +23,7 @@
     "function": {
       "fg": { "$value": "{palette.blue.1900}" }
     },
-    "function.declaration": {
+    "function-declaration": {
       "fg": { "$value": "{palette.mediumorange.1600}" }
     },
     "interface": {
@@ -33,10 +33,10 @@
       "fg": { "$value": "{palette.mediumorange.1600}" }
     },
     "label": {
-      "fg": "#ff0000"
+      "fg": { "$value": "#ff0000" }
     },
     "macro": {
-      "fg": "{palette.red.1500}"
+      "fg": { "$value": "{palette.red.1500}" }
     },
     "method": {
       "fg": { "$value": "{palette.blue.1900}" }

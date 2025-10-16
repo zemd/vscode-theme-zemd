@@ -1,11 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Typescript configuration",
-  "extends": "@zemd/tsconfig/tsconfig-node.json",
+  "extends": "@zemd/tsconfig/tsconfig-base.json",
   "compilerOptions": {
     "outDir": "build",
-    "rootDir": ".",
-    "baseUrl": "/"
+    "baseUrl": "./",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "module": "esnext",
+    "moduleResolution": "bundler"
   },
-  "include": ["src/**.ts"]
+  "include": ["**/**.ts"]
 }

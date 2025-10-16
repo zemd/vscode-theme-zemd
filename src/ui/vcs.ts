@@ -1,5 +1,3 @@
-// import chroma from "chroma-js";
-
 const gitDecorationColors = (_tokens: Record<string, any>) => {
   return {
     "gitDecoration.addedResourceForeground": "#0ec72f",
