@@ -2,11 +2,11 @@ import chroma from "chroma-js";
 
 export default (tokens: Record<string, any>) => {
   return {
-    "sideBar.background": tokens.panel.sidebar.bg,
-    "sideBar.foreground": tokens.panel.sidebar.fg,
+    "sideBar.background": tokens.panel.secondary.bg,
+    "sideBar.foreground": tokens.panel.secondary.fg,
 
-    "sideBarSectionHeader.background": tokens.panel.secondary.bg,
-    "sideBarSectionHeader.foreground": tokens.panel.secondary.fg,
+    "sideBarSectionHeader.background": tokens.panel.tertiary.bg,
+    "sideBarSectionHeader.foreground": tokens.panel.tertiary.fg,
     "sideBarSectionHeader.border": "#00000000",
 
     "sideBarTitle.foreground": tokens.panel.fg,

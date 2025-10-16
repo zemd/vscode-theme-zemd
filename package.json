@@ -2,7 +2,7 @@
   "name": "zemd-theme-dark",
   "displayName": "Onyx Dark Themes",
   "description": "A Visual Studio Code theme for effective work",
-  "version": "0.7.1",
+  "version": "0.9.0",
   "type": "module",
   "engines": {
     "vscode": "^1.84.0",
