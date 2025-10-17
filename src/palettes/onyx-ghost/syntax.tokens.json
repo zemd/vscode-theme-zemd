@@ -1,0 +1,38 @@
+{
+  "syntax": {
+    "$type": "color",
+    "variable": {
+      "foreground": { "$value": "{palette.lime.500}" }
+    },
+    "parameter": {
+      "foreground": { "$value": "{palette.yellow.500}" }
+    },
+    "comment": {
+      "foreground": { "$value": "{palette.green.500}" }
+    },
+    "function": {
+      "foreground": { "$value": "{palette.amber.500}" }
+    },
+    "keyword": {
+      "foreground": { "$value": "{palette.red.500}" }
+    },
+    "macro": {
+      "foreground": { "$value": "{palette.red.500}" }
+    },
+    "method": {
+      "foreground": { "$value": "{palette.amber.500}" }
+    },
+    "number": {
+      "foreground": { "$value": "{palette.yellow.500}" }
+    },
+    "regexp": {
+      "foreground": { "$value": "{palette.orange.500}" }
+    },
+    "string": {
+      "foreground": { "$value": "{palette.orange.500}" }
+    },
+    "punctuation": {
+      "foreground": { "$value": "{palette.gray.500}" }
+    }
+  }
+}

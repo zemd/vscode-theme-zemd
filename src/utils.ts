@@ -1,5 +1,3 @@
-// type TForeground = `#${string}`; // TODO: align colors with this type
-
 export const FONT_STYLES = ["bold", "italic", "underline", "normal"] as const;
 export type TFontStyle = (typeof FONT_STYLES)[number];
 
