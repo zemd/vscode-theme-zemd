@@ -57,7 +57,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "@types/chroma-js": "^3.1.2",
-    "@types/node": "^25.6.0",
+    "@types/node": "^25.6.2",
     "@vscode/vsce": "^3.9.1",
     "@zemd/eslint-ts": "^3.0.2",
     "@zemd/tsconfig": "^2.0.0",
@@ -68,7 +68,7 @@
     "prettier": "^3.8.3",
     "style-dictionary": "^5.4.0",
     "typescript": "^6.0.3",
-    "zod": "^4.4.2"
+    "zod": "^4.4.3"
   },
   "repository": {
     "type": "git",
