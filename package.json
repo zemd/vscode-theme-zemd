@@ -57,7 +57,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "@types/chroma-js": "^3.1.2",
-    "@types/node": "^25.9.3",
+    "@types/node": "^26.0.0",
     "@vscode/vsce": "^3.9.2",
     "@zemd/eslint-ts": "^3.0.3",
     "@zemd/tsconfig": "^2.0.0",
